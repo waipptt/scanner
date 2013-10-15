@@ -1,5 +1,24 @@
 # Changelog for AppGyver Scanner for iOS
 
+## 2.7.9 (2013-10-12)
+
+iOS7 stabilization and Native UI improvements.
+
+Features (requires [Steroids.js](https://github.com/appgyver/steroids-js) v2.7.10):
+  - Custom images as navigation bar and tab bar background 
+  - Support for multiple buttons in multiple locations inside the navigation bar.
+  - Support for images as navigaton bar buttons.
+
+Changes:
+  - Removed hardcoded GenericPush plugin in favor of build service plugin integration.
+
+Bugfixes:
+  - Fixed SVG/CSS mimetypes in localhost.
+  - Fixed navigation bar back button arrow tint color not being affected by `steroids.config.navigationBar.buttonTintColor`.
+  - Fixed status bar rendering with drawer.
+  - Fixed crashes introduced by v2.7.8.
+  - Fixed most of the memory leaks introduced by iOS7.
+
 ## 2.7.8 (2013-09-28)
 
 Full iOS7 support.
