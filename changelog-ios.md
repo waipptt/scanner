@@ -2,19 +2,18 @@
 
 ##3.1.0 (2013-12-04)
 
-Cordova 3.1 upgrade
+Cordova 3.1.0 upgrade, bugfixes for status bar and steroids.layers methods.
 
 Features:
   - Cordova support upgraded to 3.1.0
-  - Overhaul of hardcoded plugins due to pluginization of cordova
   - Plugins included in App Store Scanner: Cordova core plugins, BarcodeScanner, Google analytics, SQLite plugin
   - No plugins are included by default for builds made through AppGyver Build Service(with the exception of Scanner builds which depend on a couple of core plugins and barcodescanner)
   - replaceLayers supports hiding navigation bar during the replace process
   - Initial webviews of the application have a preload identifier based on their 'location' attribute
-  - New API call to remove a preloaded layer from memory
-  - New APIs to hide and show the tab bar for tabbed applications
-  - New APIs to hide and show the status bar. Includes changing the status bar style dynamically
-  - New status bar style 'light'. This also deprecates the iOS6 status bar style 'black'
+  - Support for removing a preloaded layer from memory with steroids.views.WebView.prototype.unload
+  - Support for hiding and showing the tab bar for tabbed applications
+  - Support for hiding and showing the status bar. Includes changing the status bar style dynamically
+  - Support for new status bar style 'light' 
 
 Changes:
   - To have working cordova plugins javascript loading, cordova.js must be loaded from src="http://localhost/cordova.js" or "/cordova.js" if window.location is already localhost
@@ -22,16 +21,16 @@ Changes:
   - Cordova plugins are expected to be written in an ARC compatible manner. Some old plugins will not work without having -objc-no-arc in their plugin.xml
   - Plugins are no longer configured through project config*.xml files. They are automatical now.
   - Plugin js files for plugins without the new element in their plugin.xml can have their js library loaded manually through the localhost path configured in their element target attribute
-  - setNavigationBarButtons API overridesBackButton parameter can now be used without adding any actual buttons
+  - Support for overriding back button without adding any actual buttons
 
 Bugfixes:
-  - Fix status bar being always on in appstore/adhoc builds
-  - Fix replaceLayers moving the webview to be off by one(1) status bar on screen.
-  - Fix popAllLayers disabling all native transitions if called while a modal is open
+  - Fix status bar being always on in Appstore and Adhoc builds
+  - Fix steroids.layers.replace moving the webview to be off by one(1) status bar on screen.
+  - Fix steroids.layers.popAll disabling all native transitions if called while a modal is open
   - Fix tab bar selected tab tint color being always blue
   - Fix status bar being always on during modal views.
   - Fix status bar style not having any effect.
-  - Fix crash when pushing and popping layers really fast in sequence
+  - Fix crashing when pushing and popping layers really fast in sequence
 
 ## 2.7.9 (2013-10-12)
 
