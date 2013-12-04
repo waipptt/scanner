@@ -1,5 +1,18 @@
 # Changelog for AppGyver Scanner for Android
 
+##3.1.0 (2013-12-04)
+
+Cordova 3.1.0 upgrade, visibilitychange event fixes.
+
+Changes:
+  - Cordova support upgraded to 3.1.0
+  - Plugins included in App Store Scanner: Cordova core plugins, BarcodeScanner, Google analytics, SQLite plugin
+  - Removed longpress touch listener that would quit the application
+
+Bugfixes:
+  - Fixed missing visibilitychange events when switching tabs
+  - Fixed visibilitychange event issues related to pushing layers
+
 ## 2.7.6, 2.7.7, 2.7.8 (2013-07-19)
 
 Stability improvements and bugfixes.
