@@ -16,7 +16,7 @@ Features:
 
 Changes:
   - BREAKING: the following plugins are no longer included by default:
-      - File-Tranfer
+      - File-Transfer
       - Calendar Plugin
       - FacebookConnect Plugin
       - PushNotification Plugin
