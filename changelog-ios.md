@@ -7,8 +7,7 @@ Cordova 3.1.0 upgrade, bugfixes for status bar and steroids.layers methods.
 Features:
   - Cordova support upgraded to 3.1.0
   - Plugins included in App Store Scanner: Cordova core plugins, BarcodeScanner, Google analytics, SQLite plugin
-  - No plugins are included by default for builds made through AppGyver Build Service(with the exception of Scanner builds which depend on a couple of core plugins and barcodescanner)
-  - replaceLayers supports hiding navigation bar during the replace process
+  - Support for hiding navigation bar when replacing layers
   - Initial webviews of the application have a preload identifier based on their 'location' attribute
   - Support for removing a preloaded layer from memory with steroids.views.WebView.prototype.unload
   - Support for hiding and showing the tab bar for tabbed applications
