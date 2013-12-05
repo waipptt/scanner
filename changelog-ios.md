@@ -6,7 +6,7 @@ Cordova 3.1.0 upgrade, bugfixes for status bar and steroids.layers methods.
 
 Features:
   - Cordova support upgraded to 3.1.0
-  - Plugins included in App Store Scanner: Cordova core plugins, BarcodeScanner, Google analytics, SQLite plugin
+  - Plugins included in App Store Scanner: Cordova core plugins (excluding File-Transfer and Console), BarcodeScanner, Google Analytics, SQLite plugin
   - Support for hiding navigation bar when replacing layers
   - Initial webviews of the application have a preload identifier based on their 'location' attribute
   - Support for removing a preloaded layer from memory with steroids.views.WebView.prototype.unload
@@ -15,6 +15,13 @@ Features:
   - Support for new status bar style 'light' 
 
 Changes:
+  - BREAKING: the following plugins are no longer included by default:
+      - File-Tranfer
+      - Calendar Plugin
+      - FacebookConnect Plugin
+      - PushNotification Plugin
+      - MapKitView
+      - Flurry Plugin
   - To have working cordova plugins javascript loading, cordova.js must be loaded from src="http://localhost/cordova.js" or "/cordova.js" if window.location is already localhost
   - config*.xml files need to be updated to a new format and contents
   - Cordova plugins are expected to be written in an ARC compatible manner. Some old plugins will not work without having -objc-no-arc in their plugin.xml
