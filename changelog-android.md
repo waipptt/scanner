@@ -6,7 +6,11 @@ Cordova 3.1.0 upgrade, visibilitychange event fixes.
 
 Changes:
   - Cordova support upgraded to 3.1.0
-  - Plugins included in App Store Scanner: Cordova core plugins, BarcodeScanner, Google analytics, SQLite plugin
+  - Plugins included in App Store Scanner: Cordova core plugins (excluding File-Transfer and Console), BarcodeScanner, Google analytics, SQLite plugin
+  - BREAKING: the following plugins are no longer included by default:
+      - File-Transfer
+      - Calendar Plugin
+      - DatePicker Plugin
   - Removed longpress touch listener that would quit the application
 
 Bugfixes:
