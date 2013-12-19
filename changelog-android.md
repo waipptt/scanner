@@ -1,5 +1,21 @@
 # Changelog for AppGyver Scanner for Android
 
+##3.1.1 (2013-12-19)
+
+Improved Cordova 3.1 stability, all the Cordova core plugins now included, SQLite plugin fix.
+
+Features:
+
+  - Previously missing Cordova core plugins, File-Transfer and Console, are now included by default.
+  - Updated all plugins to latest versions.
+
+Changes:
+  - Cordova.js can now be downloaded only from http://localhost/cordova.js.
+  - Shortened the application label from "AppGyver Scanner" to "Scanner" to prevent truncating on some Android devices.
+
+Bugfixes:
+  - Fixed SQLite plugin compatibility issue
+
 ##3.1.0 (2013-12-04)
 
 Cordova 3.1.0 upgrade, visibilitychange event fixes.

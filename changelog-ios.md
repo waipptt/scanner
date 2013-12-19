@@ -1,5 +1,22 @@
 # Changelog for AppGyver Scanner for iOS
 
+##3.1.1 (2013-12-19)
+
+All the Cordova core plugins now included, support for updating tab titles and icons, several bugfixes.
+
+Features:
+  - Previously missing Cordova core plugins, File-Transfer and Console, are now included by default.
+  - Support for updating tab titles and icons to new ones with steroids.tabBar.update.
+
+Changes:
+  - Adds failure callbacks to steroids.tabBar.show and steroids.tabBar.hide, if another transition is in progress at the same time.
+  - Cordova.js can now be downloaded only from http://localhost/cordova.js.
+
+Bugfixes:
+  - Fixed camera core plugin.
+  - Fixed modal webview html content starting from under the statusbar instead of below status bar.
+  - Fixed steroids.layers.replace to replace layers correctly and to release old layers correctly.
+
 ##3.1.0 (2013-12-04)
 
 Cordova 3.1.0 upgrade, bugfixes for status bar and steroids.layers methods.
@@ -12,7 +29,7 @@ Features:
   - Support for removing a preloaded layer from memory with steroids.views.WebView.prototype.unload
   - Support for hiding and showing the tab bar for tabbed applications
   - Support for hiding and showing the status bar. Includes changing the status bar style dynamically
-  - Support for new status bar style 'light' 
+  - Support for new status bar style 'light'
 
 Changes:
   - BREAKING: the following plugins are no longer included by default:
@@ -43,7 +60,7 @@ Bugfixes:
 iOS7 stabilization and Native UI improvements.
 
 Features (requires [Steroids.js](https://github.com/appgyver/steroids-js) v2.7.10):
-  - Custom images as navigation bar and tab bar background 
+  - Custom images as navigation bar and tab bar background
   - Support for multiple buttons in multiple locations inside the navigation bar.
   - Support for images as navigaton bar buttons.
 
