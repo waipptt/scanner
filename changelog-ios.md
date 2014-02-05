@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner for iOS
 
-##3.1.2 (TODO)
+##3.1.2 (TO DO)
 
 Features:
   - Support for updating navigation bar contents (title, title image, buttons) per webview ([#108](https://github.com/AppGyver/scanner/issues/108), [#18](https://github.com/AppGyver/scanner/issues/18), [#37](https://github.com/AppGyver/scanner/issues/37))
