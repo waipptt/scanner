@@ -1,5 +1,24 @@
 # Changelog for AppGyver Scanner for iOS
 
+##3.1.2 (TODO)
+
+Features:
+  - Support for updating navigation bar contents (title, title image, buttons) per webview ([#108](https://github.com/AppGyver/scanner/issues/108), [#18](https://github.com/AppGyver/scanner/issues/18), [#37](https://github.com/AppGyver/scanner/issues/37))
+  - Support for config.ios.xml option to disable iOS7 pop gesture ([#21](https://github.com/AppGyver/scanner/issues/21))
+  - Support for config.ios.xml option to disable tint coloring for unselected tab bar icons
+  - Support for config.ios.xml option to disable automatic hiding of splashscreen during application start
+  - Support for showing and hiding splashscreen programmatically ([#41](https://github.com/AppGyver/scanner/issues/41))
+
+Changes:
+  - Tab bar selected icon tint color now also affects the selected icon title tint color ([#116](https://github.com/AppGyver/scanner/issues/116))
+
+Bugfixes:
+  - Fixed [the Issue #101](https://github.com/AppGyver/scanner/issues/101) steroids.layers.replace breaks steroids.layer.push
+  - Fixed [the Issue #105](https://github.com/AppGyver/scanner/issues/105) calling steroids.navigationBar.show() multiple times on preloaded views pushes WebView content downwards
+  - Fixed [the Issue #9](https://github.com/AppGyver/scanner/issues/9) native keyboard toolbar being affected by navigation bar appearance attributes
+  - Fixed [the Issue #107](https://github.com/AppGyver/scanner/issues/107) showing a preloaded modal multiple times when the status bar is active pushes the modal's content downwards
+
+
 ##3.1.1 (2013-12-19)
 
 All the Cordova core plugins now included, support for updating tab titles and icons, several bugfixes.
