@@ -1,5 +1,15 @@
 # Changelog for AppGyver Scanner for Android
 
+##3.1.2 (TO DO)
+
+Features:
+  - Preliminary Android 4.4 support with limited features
+
+Bugfixes:
+  - Fixed the issue native backbutton exiting the app
+  - Fixed fullscreen preference in config.android.xml (also fixing [the Issue #97](https://github.com/AppGyver/scanner/issues/97) WebView does not scroll when focusing on input element)
+
+
 ##3.1.1 (2013-12-19)
 
 Improved Cordova 3.1 stability, all the Cordova core plugins now included, SQLite plugin fix.
