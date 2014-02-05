@@ -6,7 +6,7 @@ Features:
   - Preliminary Android 4.4 support with limited features
 
 Bugfixes:
-  - Fixed the issue native backbutton exiting the app
+  - Fixed the issue of native backbutton exiting the app
   - Fixed fullscreen preference in config.android.xml (also fixing [the Issue #97](https://github.com/AppGyver/scanner/issues/97) WebView does not scroll when focusing on input element)
 
 
@@ -37,7 +37,7 @@ Changes:
       - File-Transfer
       - Calendar Plugin
       - DatePicker Plugin
-  - Removed longpress touch listener that would quit the application
+  - Removed longpress touch listener which would quit the application
 
 Bugfixes:
   - Fixed missing visibilitychange events when switching tabs
