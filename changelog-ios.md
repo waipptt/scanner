@@ -1,6 +1,8 @@
 # Changelog for AppGyver Scanner for iOS
 
-##3.1.2 (TO DO)
+##3.1.2 (2014-02-10)
+
+Support for updating navigation bar contents and hiding and showing splashscreen programmatically and several bugfixes.
 
 Features:
   - Support for updating navigation bar contents (title, title image, buttons) per webview ([#108](https://github.com/AppGyver/scanner/issues/108), [#18](https://github.com/AppGyver/scanner/issues/18), [#37](https://github.com/AppGyver/scanner/issues/37))
@@ -8,6 +10,7 @@ Features:
   - Support for config.ios.xml option to disable tint coloring for unselected tab bar icons
   - Support for config.ios.xml option to disable automatic hiding of splashscreen during application start
   - Support for showing and hiding splashscreen programmatically ([#41](https://github.com/AppGyver/scanner/issues/41))
+  - Support for showing and hiding navigation bar with animation
 
 Changes:
   - Tab bar selected icon tint color now also affects the selected icon title tint color ([#116](https://github.com/AppGyver/scanner/issues/116))
