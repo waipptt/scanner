@@ -5,11 +5,19 @@
 Premilinary Android 4.4 support, bugfixes for back button and fullscreen preference.
 
 Features:
-  - Preliminary Android 4.4 support with limited features
+  - Preliminary Android 4.4 support with limited features.
 
 Bugfixes:
-  - Fixed the issue of native backbutton exiting the app
-  - Fixed fullscreen preference in config.android.xml (also fixing [the Issue #97](https://github.com/AppGyver/scanner/issues/97) WebView does not scroll when focusing on input element)
+  - Fixed the issue of native backbutton exiting the app.
+  - Fixed fullscreen preference in config.android.xml (also fixing [issue #97](https://github.com/AppGyver/scanner/issues/97) where WebView does not scroll when focusing on input element).
+
+Android 4.4 known issues:
+  - Requests to `http://localhost/` fail randomly. Serving the app via File protocol (i.e. `steroids.config.location = "index.html"`) works.
+  - Animations to and from new (not preloaded) WebViews are uglier.
+  - If you load a faulty document to a WebView, it usually results in a black screen instead of something informative.
+  - Orientation settings other than "only portrait allowed" are not supported.
+  - No ChromeView or awesome debugging or any of that stuff.
+  - Cordova events `pause`,`resume` and `destroy` work inconsistently/might crash.
 
 
 ##3.1.1 (2013-12-19)
