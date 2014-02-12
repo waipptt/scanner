@@ -1,5 +1,9 @@
 # Changelog for AppGyver Scanner for Android
 
+##3.1.2.1 (2014-02-10)
+
+Reverted support for Android 4.4 due to it causing issues in both Android 4.4 and older versions.
+
 ##3.1.2 (2014-02-05)
 
 Premilinary Android 4.4 support, bugfixes for back button and fullscreen preference.
