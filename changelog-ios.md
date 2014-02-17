@@ -14,6 +14,7 @@ Features:
 
 Changes:
   - Tab bar selected icon tint color now also affects the selected icon title tint color ([#116](https://github.com/AppGyver/scanner/issues/116))
+  - [OAuth.io plugin](https://oauth.io/) included in the App Store Scanner (but not Simulator or custom builds from the Build Service), causes a global `OAuth` object to be defined in every WebView.
 
 Bugfixes:
   - Fixed [the Issue #101](https://github.com/AppGyver/scanner/issues/101) steroids.layers.replace breaks steroids.layer.push
