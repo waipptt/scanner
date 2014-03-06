@@ -1,5 +1,16 @@
 # Changelog for AppGyver Scanner for iOS
 
+##3.1.3 (2014-03-06)
+
+Features:
+ - Support for setting tab bar badges, see [`steroids.tabBar.update`](http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_steroids.tabBar_tabBar.update.md.html#steroids.tabBar.update)
+ - Support for programmatically selecting a tab, see [`steroids.tabBar.selectTab`](http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_steroids.tabBar_tabBar.selectTab.md.html#steroids.tabBar.selectTab)
+ - [`steroids.layers.replace`](http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_Steroids.layers_layers.replace.md.html#steroids.layers.replace) now works for WebViews already in the layer stack. This allows developers to circumvent an issue with calling `steroids.layers.popAll()` in a non-visible tab – see the [GitHub issue](https://github.com/AppGyver/scanner/issues/155) for more details.
+ - Support for hiding and showing a modal without an animation (see the [`steroids.modal`](http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_Steroids.modal_index.md.html#steroids.modal) API docs).
+
+Bugfixes:
+ - Fixed compatibility issues with some plugins that include a static library (`.a` extension)
+
 ##3.1.2 (2014-02-10)
 
 Support for updating navigation bar contents and hiding and showing splashscreen programmatically and several bugfixes.
