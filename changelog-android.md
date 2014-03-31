@@ -1,5 +1,17 @@
 # Changelog for AppGyver Scanner for Android
 
+##3.1.4 (2014-03-26)
+
+Brought back support for Android 4.4, with several known issues:
+
+* Requires `http://localhost/cordova.js` to be loaded as `http://localhost/zordova.js`, see the [GitHub issue](https://github.com/AppGyver/scanner/issues/184) for details. (This issue also affects earlier Android versions.)
+* [CSS isn't loaded properly if your HTML starts with <!DOCTYPE html>](https://github.com/AppGyver/scanner/issues/190)
+* [Animations to and from non-preloaded WebViews are ugly](https://github.com/AppGyver/scanner/issues/189)
+* [Loading a faulty document to a WebView usually results in a black screen](https://github.com/AppGyver/scanner/issues/188)
+* [Orientation settings other than "only portrait allowed" are not supported](https://github.com/AppGyver/scanner/issues/187)
+* [ChromeView not supported](https://github.com/AppGyver/scanner/issues/186)
+* [Cordova events `pause`, `resume` and `destroy` work inconsistently/might crash](https://github.com/AppGyver/scanner/issues/185)
+
 ##3.1.2.1 (2014-02-10)
 
 Reverted support for Android 4.4.
