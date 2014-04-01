@@ -1,5 +1,45 @@
 # Changelog for AppGyver Scanner for iOS
 
+##3.1.4 (TODO)
+
+Multiple new features and bugfixes to native UI.
+
+Breaking changes:
+
+- Hardcoded Google Analytics plugin removed.
+- Hardcoded CouchDB support removed.
+- Increased minimum iOS version requirement from 6.0 to 7.0.
+
+Features (see [Steroids.js v3.1.8 changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md#318) for the relevant API calls):
+
+- Support for updating the currently active tab bar tab. Closes [#196](https://github.com/AppGyver/scanner/issues/196)
+- Support for adding tap event listener to the status bar. Closes [#47](https://github.com/AppGyver/scanner/issues/47)
+- Support for showing/hiding the keyboard input accessory bar. Closes [#200](https://github.com/AppGyver/scanner/issues/200).
+- Support for a fully custom back button in navigation bar. Closes [#124](https://github.com/AppGyver/scanner/issues/124).
+- Support for using the navigation bar in a modal window. Closes [#49](https://github.com/AppGyver/scanner/issues/49).
+- Support for showing multiple modals on top of each other. Closes [#7](https://github.com/AppGyver/scanner/issues/7).
+- Proper callbacks for animation start/end. Closes [#195](https://github.com/AppGyver/scanner/issues/195).
+- Support for using a navigation bar in modal windows.
+- Support for programmatically showing `loading.html`. Closes [#149](https://github.com/AppGyver/scanner/issues/149).
+- Support for showing multiple modals on top of each other. Closes [#7](https://github.com/AppGyver/scanner/issues/7)
+- New `DisableDoubleTapToFocus` preference in `config.ios.xml` disables the default WebView behavior where double-tapping on the screen scrolls the content. Closes [#144](https://github.com/AppGyver/scanner/issues/144).
+- New `ViewIgnoresStatusBar` preference in `config.ios.xml` will make the WebView start under the status bar instead of below it. Closes [#62](https://github.com/AppGyver/scanner/issues/62).
+- Sliding animations now work in landscape orientation.
+
+Bugfixes:
+
+- Fixed several UI alignment issues introduced with iOS 7 UI updates. Closes [#194](https://github.com/AppGyver/scanner/issues/194), [#90](https://github.com/AppGyver/scanner/issues/90), [#98](https://github.com/AppGyver/scanner/issues/98), [#133](https://github.com/AppGyver/scanner/issues/133) and [#194](https://github.com/AppGyver/scanner/issues/194).
+- Fixed a crash when updating the tab bar with fewer tabs that exist on the screen. Closes [#193](https://github.com/AppGyver/scanner/issues/193).
+- Fixed a bug where updating the tab bar wouldn't update the "selected image" of the tab. Closes [#192](https://github.com/AppGyver/scanner/issues/192).
+- Animations will now correctly use the WebView background color. Closes [#12](https://github.com/AppGyver/scanner/issues/12).
+- Fixed duplicate symbols when using the CouchBase plugin. Closes [#197](https://github.com/AppGyver/scanner/issues/197).
+- Fixed crash when using tabs without titles in build service Ad Hoc builds
+- When using the `HideKeyboardFormAccessoryBar` preference in `config.ios.xml`, the keyboard background is no longer transparent on iOS 7.1. Closes [#176](https://github.com/AppGyver/scanner/issues/176).
+
+Changes:
+
+- Disabled Crittercism crash reporting in Ad Hoc and App Store builds.
+
 ##3.1.3 (2014-03-06)
 
 Features:
