@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner for iOS
 
-##3.1.4 (TODO)
+##3.1.4 (2014-04-03)
 
 Multiple new features and bugfixes to native UI.
 
