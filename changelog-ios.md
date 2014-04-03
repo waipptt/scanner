@@ -10,7 +10,7 @@ Breaking changes:
 - Hardcoded CouchDB support removed.
 - Increased minimum iOS version requirement from 6.0 to 7.0.
 
-Features (see [Steroids.js v3.1.8 changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md#318) for the relevant API calls):
+Features (see [Steroids.js v3.1.8 changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md#318-2014-04-03) for the relevant API calls):
 
 - Support for updating the currently active tab bar tab. Closes [#196](https://github.com/AppGyver/scanner/issues/196)
 - Support for adding tap event listener to the status bar. Closes [#47](https://github.com/AppGyver/scanner/issues/47)
