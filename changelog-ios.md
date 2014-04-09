@@ -6,7 +6,7 @@ Multiple new features and bugfixes to native UI.
 
 Breaking changes:
 
-- Hardcoded Google Analytics plugin removed.
+- Hardcoded Google Analytics plugin removed. If including the plugin manually, please use the AppGyver fork at https://github.com/AppGyver/GAPlugin which has been fixed to work for multiple WebViews.
 - Hardcoded CouchDB support removed.
 - Increased minimum iOS version requirement from 6.0 to 7.0.
 
