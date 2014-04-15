@@ -13,3 +13,8 @@ Supported features:
 * Steroids CLI refresh will reload project.
 
 * Buildable from AppGyver Build Service having adhoc, scanner and Google Play as build targets.
+
+* Supported settings in Build Service:
+	* Keystore
+	* Prodution, Ad Hoc and Scanner Build settings EXCEPT min/max SDK level
+	* Icons
