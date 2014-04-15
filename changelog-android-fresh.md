@@ -6,6 +6,10 @@ First beta release!
 
 Supported features:
 
-* Single-Page Applications from file url (urls that start without leading slash, eg. "index.html").
+* Single-Page Applications from a File URL. File URLs start without a leading slash, eg. "index.html".
+
+* Start application from a scanned QR code which points to Steroids CLI.
 
 * Steroids CLI refresh will reload project.
+
+* Buildable from AppGyver Build Service having adhoc, scanner and Google Play as build targets.
