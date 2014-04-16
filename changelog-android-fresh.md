@@ -4,6 +4,10 @@
 
 First beta release!
 
+Supported Android versions:
+
+Android 3.0.x (API level 11) to Android 4.4 (API level 19)
+
 Supported features:
 
 * Single-Page Applications from a File URL. File URLs start without a leading slash, eg. "index.html".
