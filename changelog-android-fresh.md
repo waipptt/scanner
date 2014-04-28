@@ -5,19 +5,14 @@
 First beta release!
 
 Supported Android versions:
-
 Android 3.0.x (API level 11) to Android 4.4 (API level 19)
 
 Supported features:
 
 * Single-Page Applications from a File URL. File URLs start without a leading slash, eg. "index.html".
-
 * Start application from a scanned QR code which points to Steroids CLI.
-
 * Steroids CLI refresh will reload project.
-
 * Buildable from AppGyver Build Service having adhoc, scanner and Google Play as build targets.
-
 * Supported settings in Build Service:
 	* Keystore
 	* Prodution, Ad Hoc and Scanner Build settings EXCEPT min/max SDK level
