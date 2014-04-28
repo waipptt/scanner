@@ -1,5 +1,12 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 0.2 (2014-04-28)
+
+* Android 2.3 support (API levels 10-19)
+	* Minimum SDK level can be configured in Build Service.
+	* Maximum SDK level setting has no effect for Fresh Android.
+	* See [Android Developer's guide](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html) for details about selecting an SDK level.
+
 ## 0.1 (2014-04-15)
 
 First beta release!
