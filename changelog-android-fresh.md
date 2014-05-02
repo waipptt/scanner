@@ -1,5 +1,11 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 0.3 (2014-05-02): Remote Debugging on Android 4.4
+
+* Remote debugging with Chrome on Android 4.4
+	* Connect your 4.4 device with a cable and open `about:inspect` in Chrome.
+
+
 ## 0.2 (2014-04-28): Android 2.3 Support
 
 * Android 2.3 support (API levels 10-19)
