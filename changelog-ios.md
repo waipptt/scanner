@@ -1,5 +1,38 @@
 # Changelog for AppGyver Scanner for iOS
 
+## 3.1.5 (2014-05-06)
+
+New drawer, multiple other new features and bugfixes. Please see the [Steroids.js changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md) for the relevant API calls.
+
+Breaking changes:
+
+- Drawer implementation completely redone, new drawers require Steroids.js v3.1.9. Please see the [Drawer API docs]( http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_steroids.drawers_index.md.html#steroids.drawers) for more information. Closes [#126](https://github.com/AppGyver/steroids/issues/126), [#123](https://github.com/AppGyver/steroids/issues/123) and [#118](https://github.com/AppGyver/steroids/issues/118).
+
+
+Features:
+
+- All locales are listed by default in app settings. This makes Steroids apps use the OS language instead of only English. Closes [#198](https://github.com/AppGyver/steroids/issues/198).
+- Modal can be opened with navigation bar already open. Available with Steroids.js 3.1.9. Closes [#220](https://github.com/AppGyver/steroids/issues/220).
+- All open modals can now be closed with a single API call (available as a secret feature `steroids.modal.closeAll` in Steroids.js 3.1.9). Closes [#218](https://github.com/AppGyver/steroids/issues/218).
+- Application state (preloaded WebViews, tabs, modals) etc. can now be fetched (available as a secret feature, `steroids.getApplicationState()` in Steroids.js 3.1.9). Closes [#205](https://github.com/AppGyver/steroids/issues/205).
+- Initial native UI events implemented (available as a secret feature in Steroids.js 3.1.9). Closes [#148](https://github.com/AppGyver/steroids/issues/148) and [#117](https://github.com/AppGyver/steroids/issues/117).
+- Allow an untouched image to be used for navigation bar buttons. Available with Steroids.js 3.1.9. Closes [#130](https://github.com/AppGyver/steroids/issues/130).
+
+Bugfixes:
+
+- Fixed bug where setting `steroids.statusBar.onTap` event listener messed up status bar appearance. Closes [#260](https://github.com/AppGyver/steroids/issues/260).
+- `steroids.screen.freeze` no longer makes tab bar background go black.
+- Calling `modal.show()` and `navigationBar.show()` at the same time now displays navigation bar correctly. Closes [#261](https://github.com/AppGyver/steroids/issues/261).
+- Calling `layers.pop()` after calling `layers.push({navigationBar:false})` now reshows navigation bar correctly. Closes [#221](https://github.com/AppGyver/steroids/issues/221) and [#109](https://github.com/AppGyver/steroids/issues/109).
+- Setting `KeyboardShrinksView=true` in `config.ios.xml` no longer shows yellow behind the keyboard. Closes [#219](https://github.com/AppGyver/steroids/issues/219).
+- Ongoing call or personal hotspot banner no longer offsets the WebView. Closes [#217](https://github.com/AppGyver/steroids/issues/217).
+- Fixed bug where apps with no tab bar enabled rendered the navigation bar under the status bar. Closes [#212](https://github.com/AppGyver/steroids/issues/212).
+- Fixed bug where showing a modal from landscape caused underlying WebView to go back to portrait orientation. Closes [#199](https://github.com/AppGyver/steroids/issues/199).
+- Fixed a bug where pushing a WebView on app load and going back caused a grey banner to show. Closes [#144](https://github.com/AppGyver/steroids/issues/144).
+- Fixed a bug where `steroids.layers.replace` didn't resize a short WebView correctly. Closes [#115](https://github.com/AppGyver/steroids/issues/115).
+- Fixed a crash when rotating app from landscape to portrait. Closes [#86](https://github.com/AppGyver/steroids/issues/86).
+
+
 ##3.1.4 (2014-04-03)
 
 Multiple new features and bugfixes to native UI.
