@@ -1,5 +1,9 @@
 # Changelog for AppGyver Scanner for iOS
 
+## 3.1.5-p1 (2014-05-07)
+
+Fixed a bug where `steroids.drawer.hide` only work when both left and right drawers were defined. Related issue [#268](https://github.com/AppGyver/steroids/issues/268).
+
 ## 3.1.5 (2014-05-06)
 
 New drawer, multiple other new features and bugfixes. Please see the [Steroids.js changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md) for the relevant API calls.
