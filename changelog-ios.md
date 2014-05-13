@@ -1,12 +1,4 @@
-# Changelog for AppGyver Scanner for iOS
-
-## 3.1.5-p2 (2014-05-08)
-
-Fixed a bug where hiding the drawer with the keyboard open would destroy the drawer view. Related issue [#267](https://github.com/AppGyver/steroids/issues/267).
-
-## 3.1.5-p1 (2014-05-07)
-
-Fixed a bug where `steroids.drawer.hide` only work when both left and right drawers were defined. Related issue [#268](https://github.com/AppGyver/steroids/issues/268).
+# Changelog for AppGyver iOS Native Runtime
 
 ## 3.1.5 (2014-05-06)
 
