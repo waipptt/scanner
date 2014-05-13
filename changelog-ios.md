@@ -1,4 +1,4 @@
-# Changelog for AppGyver iOS Native Runtime
+# Stable AppGyver iOS Native Runtime
 
 This document is for stable releases of the iOS Native Runtime, updated when the [AppGyver Scanner app](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8) running the given runtime version is available for download from the App Store.
 
