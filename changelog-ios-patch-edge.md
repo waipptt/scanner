@@ -6,9 +6,9 @@ The changelog for stable releases (i.e. `3.1.5`) is available [here](https://git
 
 Patch versions (`-pX`) are always non-breaking and generally include bugfixes. The fixes introduced in patch versions will always be included in the next stable, non-patch version of the runtime (and documented accordingly in the stable version changelog).
 
-Edge versions (`-edge`) include features that are upcoming in the next stable release. They work with the [Steroids.js `next` branch](https://github.com/AppGyver/steroids-js/tree/next), and if documentation is available, it can be found in the [Edge API docs](docs.appgyver.com/en/edge/index.html).
+Edge versions include features that are upcoming in the next stable release. They work with the [Steroids.js `next` branch](https://github.com/AppGyver/steroids-js/tree/next), and if documentation is available, it can be found in the [Edge API docs](docs.appgyver.com/en/edge/index.html).
 
-### 3.1.6-edge-p1 (2014-05-13)
+### 3.1.6-p1 (EDGE, 2014-05-13)
 
 Fixed a bug where a modal could not be opened from the drawer. Related issue [#291](https://github.com/AppGyver/steroids/issues/291).
 
@@ -16,7 +16,7 @@ Fixed a bug where a modal could not be opened from the drawer. Related issue [#2
 
 Fixed a bug where a modal could not be opened from the drawer. Related issue [#291](https://github.com/AppGyver/steroids/issues/291).
 
-### 3.1.6-edge (2014-05-13)
+### 3.1.6 (EDGE, 2014-05-13)
 
 Breaking changes:
   - All Steroids API calls are transferred to the new JSCoreBridge, available in Steroids.js v3.1.10 (`next` branch). Old Steroids.js versions no longer work with v3.1.6.
