@@ -1,5 +1,9 @@
 # Changelog for AppGyver iOS Native Runtime
 
+This document is for stable releases of the iOS Native Runtime, updated when the [AppGyver Scanner app](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8) running the given runtime version is available for download from the App Store.
+
+In addition, **patch** and **Edge** versions are available via the Build Service to give access to new features and bugfixes before a new stable version has been approved by Apple. Changelog and more information can be found [here](https://github.com/AppGyver/scanner/blob/master/changelog-ios-patch-edge.md).
+
 ## 3.1.5 (2014-05-06)
 
 New drawer, multiple other new features and bugfixes. Please see the [Steroids.js changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md) for the relevant API calls.
