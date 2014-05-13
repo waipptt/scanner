@@ -2,11 +2,11 @@
 
 This changelog documents features and bugfixes available in **patch** and **edge** versions of the AppGyver iOS Native Runtime. They are available to give users access to new features and bugfixes without having to wait for the Apple App Store approval process. The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
-The changelog for stable releases (i.e. `3.1.5`) is available [here](https://github.com/AppGyver/scanner/blob/master/changelog-ios.md).
+The changelog for **stable** releases is available [here](https://github.com/AppGyver/scanner/blob/master/changelog-ios.md).
 
-Patch versions (`-pX`) are always non-breaking and generally include bugfixes. The fixes introduced in patch versions will always be included in the next stable, non-patch version of the runtime (and documented accordingly in the stable version changelog).
+**Patch versions** (`-pX`) are always non-breaking and generally include bugfixes to the latest stable release. The fixes introduced in patch versions will always be included in the next stable, non-patch version of the runtime (and documented accordingly in the stable version changelog).
 
-Edge versions include features that are upcoming in the next stable release. They work with the [Steroids.js `next` branch](https://github.com/AppGyver/steroids-js/tree/next), and if documentation is available, it can be found in the [Edge API docs](docs.appgyver.com/en/edge/index.html).
+**Edge versions** include features that are upcoming in the next **stable** release. They work with the [Steroids.js `next` branch](https://github.com/AppGyver/steroids-js/tree/next), and if documentation is available, it can be found in the [Edge API docs](docs.appgyver.com/en/edge/index.html).
 
 ### 3.1.6-p1 (EDGE, 2014-05-13)
 
