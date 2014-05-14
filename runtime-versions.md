@@ -15,5 +15,5 @@ This document holds up-to-date information on the runtime versions used in vario
 * **Build Service Edge Builds:** 3.1.4
 
 ## Fresh Android
-* **Build Service Stable Builds:** 0.3
-* **Build Service Edge Builds:** 0.3
+* **Build Service Stable Builds:** 0.4.0
+* **Build Service Edge Builds:** 0.4.0
