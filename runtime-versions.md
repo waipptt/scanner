@@ -7,7 +7,7 @@ This document holds up-to-date information on the runtime versions used in vario
 * **Build Service Stable Builds:** 3.1.5-p3
 * **Build Service Edge Builds:** 3.1.6-p1
 * **App.io Cloud Simulator:** 3.1.5-p1
-* **iOS Simulator (bundled with Steroids CLI):** 3.1.5
+* **iOS Simulator (bundled with Steroids CLI):** 3.1.5-p3
 
 ## Android
 * **Google Play Scanner:** 3.1.4
