@@ -1,5 +1,15 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 0.4 (2014-05-14): Chromium on Android 4.x
+
+* Remote debugging with Chrome works with Android 4.x devices.
+* Steroids apps are more consistent between different devices because the browser engine doesn't depend on Android's version.
+* You can use newest HTML5 features on all Android 4.x devices.
+* On our Canvas rendering tests, Fresh Android is 2-3 times faster using Chromium than the Android 4.4 default WebView.
+* Fresh Android with platform WebView supports API levels 10-19 (Android 2.3.3 - 4.4).
+* Fresh Android Chromium supports API levels 14-19 (Android 4.x).
+* Chromium will add 22 MB to the APK file size. Therefore Fresh Android Chromium is its own build target in the Build Service. The APK size using the platform WebView (without Chromium) is around 1 MB.
+
 ## 0.3 (2014-05-02): Remote Debugging on Android 4.4
 
 * Remote debugging with Chrome on Android 4.4
