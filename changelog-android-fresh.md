@@ -2,7 +2,7 @@
 
 ## 0.4 (2014-05-14): Chromium on Android 4.x
 
-* Remote debugging with Chrome works with Android 4.x devices.
+* Remote debugging with Chrome works with Android 4.x devices (open `about:inspect` in Chrome).
 * Steroids apps are more consistent between different devices because the browser engine doesn't depend on Android's version.
 * You can use newest HTML5 features on all Android 4.x devices.
 * On our Canvas rendering tests, Fresh Android is 2-3 times faster using Chromium than the Android 4.4 default WebView.
