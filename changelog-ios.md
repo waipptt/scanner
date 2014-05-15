@@ -10,7 +10,7 @@ New drawer, multiple other new features and bugfixes. Please see the [Steroids.j
 
 Breaking changes:
 
-- Drawer implementation completely redone, new drawers require Steroids.js v3.1.9. Please see the [Drawer API docs]( http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_steroids.drawers_index.md.html#steroids.drawers) for more information. Closes [#126](https://github.com/AppGyver/steroids/issues/126), [#123](https://github.com/AppGyver/steroids/issues/123) and [#118](https://github.com/AppGyver/steroids/issues/118).
+- Drawer implementation completely redone using the [Mutual Mobile Drawer Controller](https://github.com/mutualmobile/MMDrawerController), new drawers require Steroids.js v3.1.9. Please see the [Drawer API docs]( http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_steroids.drawers_index.md.html#steroids.drawers) for more information. Closes [#126](https://github.com/AppGyver/steroids/issues/126), [#123](https://github.com/AppGyver/steroids/issues/123) and [#118](https://github.com/AppGyver/steroids/issues/118).
 
 
 Features:
