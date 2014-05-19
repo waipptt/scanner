@@ -3,9 +3,9 @@
 This document holds up-to-date information on the runtime versions used in various Steroids components.
 
 ## iOS
-* **App Store Scanner:** 3.1.5
-* **Build Service Stable Builds:** 3.1.5-p3
-* **Build Service Edge Builds:** 3.1.6-p1
+* **App Store Scanner:** 3.1.6
+* **Build Service Stable Builds:** 3.1.5-p4
+* **Build Service Edge Builds:** 3.1.6-p2
 * **App.io Cloud Simulator:** 3.1.5-p1
 * **iOS Simulator (bundled with Steroids CLI):** 3.1.5-p3
 
