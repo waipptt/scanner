@@ -22,12 +22,10 @@ Fixed a bug where a modal could not be opened from the drawer. Related issue [#2
 
 ### 3.1.6 (EDGE, 2014-05-13)
 
-Breaking changes:
-  - All Steroids API calls are transferred to the new JSCoreBridge, available in Steroids.js v3.1.10 (`next` branch). Old Steroids.js versions no longer work with v3.1.6.
-
 Features:
   - No longer display native error message if `steroids.view.setAllowedOrientations` doesn't match allowed orientations set via the Build Service.
-  - More and better callbacks to `steroids.layers.popAll`.
+  - More and better callbacks to `steroids.layers.popAll`, available in Steroids.js v3.1.10.
+  - Support for the new JSCoreBridge, used by default in Steroids.js v3.1.10.
 
 Bugfixes:
   - Keyboard that is opened from a drawer WebView no longer stays open after the drawer is closed. Will close [#262](https://github.com/AppGyver/steroids/issues/262).
