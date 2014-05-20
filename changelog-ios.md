@@ -6,12 +6,11 @@ In addition, **patch** and **Edge** versions are available via the Build Service
 
 ## 3.1.6 (2014-05-20)
 
-Several bugfixes, better callbacks for `steroids.layers.popAll`, support for the new JSCoreBridge to handle Steroids API calls.
+Several bugfixes, better callbacks for `steroids.layers.popAll`.
 
 Features:
   - No longer display native error message if `steroids.view.setAllowedOrientations` doesn't match allowed orientations set via the Build Service.
   - More and better callbacks to `steroids.layers.popAll`, available in Steroids.js v3.1.10.
-  - Support for the new JSCoreBridge to handle Steroids API calls, used by default in Steroids.js v3.1.10.
 
 Bugfixes:
   - Keyboard that is opened from a drawer WebView no longer stays open after the drawer is closed. Closes [#262](https://github.com/AppGyver/steroids/issues/262).
