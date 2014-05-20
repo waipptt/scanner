@@ -10,9 +10,9 @@ This document holds up-to-date information on the runtime versions used in vario
 * **iOS Simulator (bundled with Steroids CLI):** 3.1.5-p3
 
 ## Android
-* **Google Play Scanner:** 3.1.4
-* **Build Service Stable Builds:** 3.1.4
-* **Build Service Edge Builds:** 3.1.4
+* **Google Play Scanner:** 3.1.3
+* **Build Service Stable Builds:** 3.1.3
+* **Build Service Edge Builds:** 3.1.3
 
 ## Fresh Android
 * **Build Service Stable Builds:** 0.4.0
