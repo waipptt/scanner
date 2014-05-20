@@ -4,6 +4,24 @@ This document is for **stable** releases of the iOS Native Runtime, updated when
 
 In addition, **patch** and **Edge** versions are available via the Build Service to give access to new features and bugfixes before a new stable version has been approved by Apple. Changelog and more information can be found [here](https://github.com/AppGyver/scanner/blob/master/changelog-ios-patch-edge.md).
 
+## 3.1.6 (2014-05-20)
+
+Several bugfixes, better callbacks for `steroids.layers.popAll`, support for the new JSCoreBridge to handle Steroids API calls.
+
+Features:
+  - No longer display native error message if `steroids.view.setAllowedOrientations` doesn't match allowed orientations set via the Build Service.
+  - More and better callbacks to `steroids.layers.popAll`, available in Steroids.js v3.1.10.
+  - Support for the new JSCoreBridge to handle Steroids API calls, used by default in Steroids.js v3.1.10.
+
+Bugfixes:
+  - Keyboard that is opened from a drawer WebView no longer stays open after the drawer is closed. Closes [#262](https://github.com/AppGyver/steroids/issues/262).
+  - Closing a drawer with the keyboard no longer destroys the target WebView. Closes [#267](https://github.com/AppGyver/steroids/issues/267)
+  - Fixed a bug where `steroids.drawer.hide` only work when both left and right drawers were defined. Closes [#268](https://github.com/AppGyver/steroids/issues/268).
+  - Steroids.js API calls now function correctly when called via the Cordova `resume` event. Closes [#90](https://github.com/AppGyver/steroids/issues/90).
+  - `steroids.layers.popAll()` now remembers root WebView's navigation bar visibility state correctly. Closes [#295](https://github.com/AppGyver/steroids/issues/295).
+  - Setting a custom back button immediately after a page is pushed no longer causes overlapping buttons. Closes [#145](https://github.com/AppGyver/steroids/issues/145).
+  - Fixed issue where WebView top inset was offset by status bar height after presenting the Cordova Camera. Closes [#296](https://github.com/AppGyver/steroids/issues/296)
+
 ## 3.1.5 (2014-05-06)
 
 New drawer, multiple other new features and bugfixes. Please see the [Steroids.js changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md) for the relevant API calls.
