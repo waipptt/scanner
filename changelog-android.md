@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner for Android
 
-##3.1.4 (2014-03-26)
+##3.1.3 (2014-03-26)
 
 Brought back support for Android 4.4, with several known issues:
 
