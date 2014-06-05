@@ -6,6 +6,31 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.0 (EDGE, 2014-06-05)
+
+Breaking changes:
+- SQLite plugin is no longer included by default and must instead be installed via the Build Service.
+
+Changes:
+- Cordova version updated to 3.5.0. Related issue [#197](https://github.com/AppGyver/steroids/issues/197).
+
+Bugfixes:
+- Fixed a bug where modals could not be opened from drawers. Related issue [#291](https://github.com/AppGyver/steroids/issues/291).
+- Fixed a bug where `steroids.modal.hideAll` showed a yellow screen. Related issue [#218](https://github.com/AppGyver/steroids/issues/218).
+- Fixed a bug where `steroids.layers.pop()` crashed the app when called in Landscape mode. Related issue [#276](https://github.com/AppGyver/steroids/issues/276).
+- Fixed a bug where modal views didn't respect `steroids.view.setAllowedOrientations`. Related issue [#313](https://github.com/AppGyver/steroids/issues/313).
+- Fixed a bug where an URL with a hash character broke `steroids.layers.push` when using the File protocol. Related issue [#206](https://github.com/AppGyver/steroids/issues/206).
+- Fixed a bug where `steroids.modal.hide` only worked when called from the modal WebView itself. Related issue [#315](https://github.com/AppGyver/steroids/issues/315).
+- Fixed a bug where drawer contents overlapped status bar. Related issue [#273](https://github.com/AppGyver/steroids/issues/273).
+- Fixed a bug where setting a background image crashed app on restart. Related issue [#368](https://github.com/AppGyver/steroids/issues/368).
+- Fixed a bug where `steroids.layers.push` and `steroids.layers.replace` didn't work from a drawer or from a preloaded view that was not in the layer stack. Related issues [#335](https://github.com/AppGyver/steroids/issues/335) & [#377](https://github.com/AppGyver/steroids/issues/377).
+- Fixed a bug where preloads or drawers defined in `application.coffee` were not applied to Ad Hoc builds. Related issue [#369](https://github.com/AppGyver/steroids/issues/369).
+- Fixed a bug where `layers.push` called from drawer fired a success callback even though it did nothing. Related issue [#335](https://github.com/AppGyver/steroids/issues/335).
+- Fixed a bug where if the back button is tapped while a new view is still loading, the navigation bar title and button change into the the title and button of the new layer. Related issue [#401](https://github.com/AppGyver/steroids/issues/401).
+- Fixed a crash when opening navigator.notification.alert and then popping the current layer. Related issue [#187](https://github.com/AppGyver/steroids/issues/187).
+- Fixed a bug where calling `steroids.drawers.show` for the opposite edge caused the other drawer to open but drawer view not update. Related issue [#402](https://github.com/AppGyver/steroids/issues/402).
+- Fixed a bug where stopping the swipe-to-go-back gesture before it is finished broke native navigation bar. Related issue [#120](https://github.com/AppGyver/steroids/issues/120).
+
 ### 3.1.6-p4 (2014-06-03)
 
 - Fixed a bug where `steroids.layers.push` and `steroids.layers.replace` didn't work from a drawer or from a preloaded view that was not in the layer stack. Related issues [#335](https://github.com/AppGyver/steroids/issues/335) & [#377](https://github.com/AppGyver/steroids/issues/377).
