@@ -9,7 +9,7 @@ The runtime versions currently in use by each AppGyver component can be found [h
 ### 3.5.0 (EDGE, 2014-06-05)
 
 Breaking changes:
-- SQLite plugin is no longer included by default and must instead be installed via the Build Service.
+- SQLite plugin is no longer included by default and must instead be installed via the Build Service as a custom plugin.
 
 Changes:
 - Cordova version updated to 3.5.0. Related issue [#197](https://github.com/AppGyver/steroids/issues/197).
