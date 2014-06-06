@@ -1,5 +1,46 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 3.5.0: First Steroids and Cordova API's
+First release of Fresh Android that includes some Steroids and Cordova API calls! This release will also become the first to have a Scanner available for download in Google Play.
+
+Features:
+
+* Steroids API Bridge for all runtimes.
+* Implemented the first batch of Steroids API calls:
+	* ping
+	* alert
+	* log
+	* getEdgeMode
+	* getIPAddress
+	* getApplicationPath
+	* openURL
+	* getCurrentVisibility
+	* setSleepDisabled
+	* getUserLocale
+	* cancelAllDownloads
+* Support for adding Cordova plugins to the project
+* Included some Cordova core plugins:
+	* org.apache.cordova.device-motion
+	* org.apache.cordova.media-capture
+	* org.apache.cordova.device-orientation
+	* org.apache.cordova.network-information
+	* org.apache.cordova.contacts
+	* org.apache.cordova.device
+	* org.apache.cordova.battery-status
+	* org.apache.cordova.globalization
+	* org.apache.cordova.media
+	* org.apache.cordova.dialogs
+	* org.apache.cordova.camera
+	* org.apache.cordova.inappbrowser
+	* org.apache.cordova.console
+	* org.apache.cordova.file-transfer
+* Added initial support for http://localhost for Cordova assets in WebKit runtimes.
+* Local Storage support for WebKit runtimes.
+
+Bugfixes:
+
+* Chromium runtime now supports folders which have a dot "." in their name
+
 ## 0.4 (2014-05-14): Chromium on Android 4.x
 
 * Remote debugging with Chrome works with Android 4.x devices (open `about:inspect` in Chrome).
