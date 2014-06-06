@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.0: First Steroids and Cordova API's
+## 3.5.0 (2014-06-XX): First Steroids and Cordova API's
 First release of Fresh Android that includes some Steroids and Cordova API calls! This release will also become the first to have a Scanner available for download in Google Play.
 
 Features:
