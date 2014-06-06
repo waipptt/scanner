@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.0 (2014-06-06): First Steroids and Cordova API's
+## 3.5.0 (2014-06-06): First Steroids and Cordova APIs
 First release of Fresh Android that includes some Steroids and Cordova API calls! This release will also become the first to have a Scanner available for download in Google Play.
 
 ###Features:
@@ -43,14 +43,14 @@ First release of Fresh Android that includes some Steroids and Cordova API calls
 
 ###Known issues:
 
-The media API's do open the Camera/Recorder but do not return the image/video/sound.
+The Cordova Media APIs do open the Camera/Recorder but do not return the image/video/sound.
 
 Chromium is still quite experimental and has quite many issues:
 * On some devices the screen glitches with noise sometimes, especially behind modals
 * Cordova API's are unstable and requires screen reload or another Cordova API call to show the previous call on the screen.
 * Sometimes the Chromium app opens but does not respond or load Cordova. Restarting the app usually solves this issue.
 * In ChromeWebView sometimes touch events are misaligned
-* Some devices crash or do not show up on Chrome Webinspector
+* Some devices crash or do not show up on Chrome Web Inspector
 
 
 ## 0.4 (2014-05-14): Chromium on Android 4.x
