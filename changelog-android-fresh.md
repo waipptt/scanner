@@ -43,9 +43,10 @@ First release of Fresh Android that includes some Steroids and Cordova API calls
 
 ###Known issues:
 
-The Cordova Media APIs do open the Camera/Recorder but do not return the image/video/sound.
+* The Cordova Media APIs do open the Camera/Recorder but do not return the image/video/sound.
+* Android 2.3 does not support localhost so Cordova will have to be loaded from "../../www/cordova.js"
 
-Chromium is still quite experimental and has quite many issues:
+__Chromium is still quite experimental and has quite many issues:__
 * On some devices the screen glitches with noise sometimes, especially behind modals
 * Cordova API's are unstable and requires screen reload or another Cordova API call to show the previous call on the screen.
 * Sometimes the Chromium app opens but does not respond or load Cordova. Restarting the app usually solves this issue.
