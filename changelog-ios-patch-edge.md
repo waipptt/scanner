@@ -6,7 +6,18 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
-### 3.5.0 (EDGE, 2014-06-05)
+
+### 3.5.0-edge-p1 (2014-06-05)
+
+Features:
+- The `center` parameter of `steroids.drawers.hide()` now supports non-preloaded WebViews. Related issue [#413](https://github.com/AppGyver/steroids/issues/413).
+- [Cordova keyboard plugin](https://github.com/AppGyver/cordova-plugin-keyboard) included.
+
+Bugfixes:
+- Fixed a bug where the `KeyboardShrinksView` parameter wasn't working in 3.5.0-edge runtime. Related issue (#404)[https://github.com/AppGyver/steroids/issues/404].
+- Fixed a bug where the `HideKeyboardFormAccessory` parameter wasn't working in 3.5.0-edge runtime. Related issue (#412)[https://github.com/AppGyver/steroids/issues/412].
+
+### 3.5.0-edge (2014-06-05)
 
 Breaking changes:
 - SQLite plugin is no longer included by default and must instead be installed via the Build Service as a custom plugin. You can find the plugin we used [here](https://github.com/brodysoft/Cordova-SQLitePlugin).
