@@ -5,6 +5,8 @@
 ###Features:
 * Fresh Android logo and Beta warning text added to the Scanner scanning screen
 
+Also Build Service was fixed so that it does not break with the default splash screens, currently Fresh Android builds ignore splash screens because they are not yet used in the builds.
+
 ## 3.5.0 (2014-06-06): First Steroids and Cordova APIs
 First release of Fresh Android that includes some Steroids and Cordova API calls!
 
