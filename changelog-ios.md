@@ -4,6 +4,13 @@ This document is for **stable** releases of the iOS Native Runtime, updated when
 
 In addition, **patch** and **Edge** versions are available via the Build Service to give access to new features and bugfixes before a new stable version has been approved by Apple. Changelog and more information can be found [here](https://github.com/AppGyver/scanner/blob/master/changelog-ios-patch-edge.md).
 
+### 3.1.6-p4 (2014-06-03)
+
+- Fixed a bug where `steroids.layers.push` and `steroids.layers.replace` didn't work from a drawer or from a preloaded view that was not in the layer stack. Related issues [#335](https://github.com/AppGyver/steroids/issues/335) & [#377](https://github.com/AppGyver/steroids/issues/377).
+- Fixed a bug where preloads or drawers defined in `application.coffee` were not applied to Ad Hoc builds. Related issue [#369](https://github.com/AppGyver/steroids/issues/369).
+- Fixed a bug where `layers.push` called from drawer fired a success callback even though it did nothing. Related issue [#335](https://github.com/AppGyver/steroids/issues/335).
+- Fixed a bug where setting a background image to a WebView crashed app on start. Related issue [#368](https://github.com/AppGyver/steroids/issues/368).
+
 ## 3.1.6 (2014-05-20)
 
 Several bugfixes, better callbacks for `steroids.layers.popAll`.
@@ -21,6 +28,22 @@ Bugfixes:
   - Setting a custom back button immediately after a page is pushed no longer causes overlapping buttons. Closes [#145](https://github.com/AppGyver/steroids/issues/145).
   - Fixed issue where WebView top inset was offset by status bar height after presenting the Cordova Camera. Closes [#296](https://github.com/AppGyver/steroids/issues/296)
 
+### 3.1.5-p4 (2014-05-20)
+
+- Fixed a bug where calling `steroids.layers.pop()` in landscape orientation crashed the app. Related issue [#276](https://github.com/AppGyver/steroids/issues/276).
+
+### 3.1.5-p3 (2014-05-13)
+
+Fixed a bug where a modal could not be opened from the drawer. Related issue [#291](https://github.com/AppGyver/steroids/issues/291).
+
+### 3.1.5-p2 (2014-05-08)
+
+Fixed a bug where hiding the drawer with the keyboard open would destroy the drawer view. Related issue [#267](https://github.com/AppGyver/steroids/issues/267).
+
+### 3.1.5-p1 (2014-05-07)
+
+Fixed a bug where `steroids.drawer.hide` only work when both left and right drawers were defined. Related issue [#268](https://github.com/AppGyver/steroids/issues/268).
+
 ## 3.1.5 (2014-05-06)
 
 New drawer, multiple other new features and bugfixes. Please see the [Steroids.js changelog](https://github.com/AppGyver/steroids-js/blob/master/CHANGELOG.md) for the relevant API calls.
@@ -28,7 +51,6 @@ New drawer, multiple other new features and bugfixes. Please see the [Steroids.j
 Breaking changes:
 
 - Drawer implementation completely redone using the [Mutual Mobile Drawer Controller](https://github.com/mutualmobile/MMDrawerController), new drawers require Steroids.js v3.1.9. Please see the [Drawer API docs]( http://docs.appgyver.com/en/edge/steroids_Steroids%20Native%20UI_steroids.drawers_index.md.html#steroids.drawers) for more information. Closes [#126](https://github.com/AppGyver/steroids/issues/126), [#123](https://github.com/AppGyver/steroids/issues/123) and [#118](https://github.com/AppGyver/steroids/issues/118).
-
 
 Features:
 
@@ -52,7 +74,6 @@ Bugfixes:
 - Fixed a bug where pushing a WebView on app load and going back caused a grey banner to show. Closes [#144](https://github.com/AppGyver/steroids/issues/144).
 - Fixed a bug where `steroids.layers.replace` didn't resize a short WebView correctly. Closes [#115](https://github.com/AppGyver/steroids/issues/115).
 - Fixed a crash when rotating app from landscape to portrait. Closes [#86](https://github.com/AppGyver/steroids/issues/86).
-
 
 ##3.1.4 (2014-04-03)
 
