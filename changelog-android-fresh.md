@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.0-p1 (2014-06-12): First Fresh Android Scanner in Google Play
+## 3.5.0-p1 (2014-06-12): Fresh Android Scanner in Google Play
 
 ###Features:
 * Fresh Android logo and Beta warning text added to the Scanner scanning screen
