@@ -1,6 +1,6 @@
-# Steroids runtime versions
+# AppGyver native runtime versions
 
-This document holds up-to-date information on the runtime versions used in various Steroids components.
+This document holds up-to-date information on the runtime versions used in various AppGyver/Steroids components.
 
 ## iOS
 * **App Store Scanner:** 3.1.6
