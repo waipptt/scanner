@@ -1,6 +1,6 @@
 # Stable AppGyver iOS Native Runtime
 
-This document is for **stable** releases of the iOS Native Runtime, updated when the [AppGyver Scanner app](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8) running the given runtime version is available for download from the App Store.
+This document contains the release notes for **stable** releases of the iOS Native Runtime. To see which version of the native runtime each AppGyver component is running, see the [native runtime versions](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md) document. A non-patch version is always accompanied by a new App Store version of the [AppGyver Scanner for iOS](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8).
 
 **Patch** versions are available via the Build Service to give access to new bugfixes before a new stable version has been approved by Apple – read more in the [native runtime Patch Version guide](https://academy.appgyver.com/categories/2-tooling/contents/119-native-runtime-patch-versions).
 
