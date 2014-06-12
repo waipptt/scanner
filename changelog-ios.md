@@ -2,7 +2,9 @@
 
 This document is for **stable** releases of the iOS Native Runtime, updated when the [AppGyver Scanner app](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8) running the given runtime version is available for download from the App Store.
 
-In addition, **patch** and **Edge** versions are available via the Build Service to give access to new features and bugfixes before a new stable version has been approved by Apple. Changelog and more information can be found [here](https://github.com/AppGyver/scanner/blob/master/changelog-ios-patch-edge.md).
+**Patch** versions are available via the Build Service to give access to new bugfixes before a new stable version has been approved by Apple – read more in the [native runtime Patch Version guide](https://academy.appgyver.com/categories/2-tooling/contents/119-native-runtime-patch-versions).
+
+For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
 ### 3.1.6-p4 (2014-06-03)
 
