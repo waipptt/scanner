@@ -7,7 +7,7 @@ The changelog for **stable** releases is available [here](https://github.com/App
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
 
-### 3.5.0-edge-p1 (2014-06-05)
+### 3.5.0-edge-p1 (2014-06-11)
 
 Features:
 - The `center` parameter of `steroids.drawers.hide()` now supports non-preloaded WebViews. Related issue [#413](https://github.com/AppGyver/steroids/issues/413).
