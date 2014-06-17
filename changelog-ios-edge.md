@@ -8,6 +8,11 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.0-edge-p2 (2014-06-17)
+
+Bugfixes:
+- Fixed a bug where having more than 5 tabs caused inconsistent behavior. Related issue [#116](https://github.com/AppGyver/steroids/issues/116).
+- Fixed a rare crash with the Facebook Cordova plugin.
 
 ### 3.5.0-edge-p1 (2014-06-11)
 
@@ -16,8 +21,8 @@ Features:
 - [Cordova keyboard plugin](https://github.com/AppGyver/cordova-plugin-keyboard) included.
 
 Bugfixes:
-- Fixed a bug where the `KeyboardShrinksView` parameter wasn't working in 3.5.0-edge runtime. Related issue (#404)[https://github.com/AppGyver/steroids/issues/404].
-- Fixed a bug where the `HideKeyboardFormAccessory` parameter wasn't working in 3.5.0-edge runtime. Related issue (#412)[https://github.com/AppGyver/steroids/issues/412].
+- Fixed a bug where the `KeyboardShrinksView` parameter wasn't working in 3.5.0-edge runtime. Related issue [#404](https://github.com/AppGyver/steroids/issues/404).
+- Fixed a bug where the `HideKeyboardFormAccessory` parameter wasn't working in 3.5.0-edge runtime. Related issue [#412](https://github.com/AppGyver/steroids/issues/412).
 
 ### 3.5.0-edge (2014-06-05)
 
