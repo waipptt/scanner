@@ -27,7 +27,7 @@ Bugfixes:
 ### 3.5.0-edge (2014-06-05)
 
 Breaking changes:
-- SQLite plugin is no longer included by default and must instead be installed via the Build Service as a custom plugin. You can find the plugin we used [here](https://github.com/brodysoft/Cordova-SQLitePlugin).
+- SQLite plugin is no longer included by default and must instead be installed via the Build Service as a custom plugin. You can find the plugin we used [here](https://github.com/AppGyver/Cordova-SQLitePlugin).
 
 Changes:
 - Cordova version updated to 3.5.0. Related issue [#197](https://github.com/AppGyver/steroids/issues/197).
