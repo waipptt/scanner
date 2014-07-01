@@ -8,6 +8,16 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.0-edge-p3 (2014-07-01)
+
+Bugfixes:
+- Reloading the app while rotated to landscape mode no longer causes the app view to be "squished". Related issue [#389](https://github.com/AppGyver/steroids/issues/389).
+- You can now open a modal view directly from Camera's success callback. Related issue [#444](https://github.com/AppGyver/steroids/issues/444).
+- Improved error message when the QR code scan is not successful. Related issue [AppGyver/composer/#7](https://github.com/AppGyver/composer/issues/7)
+- Fixed bug where the Personal Hotspot bar overlapped status bar and displaced WebView content. Related issue [#393](https://github.com/AppGyver/steroids/issues/393).
+- Fixed bug where hiding an initially visible status bar showed yellow backround if Personal Hotspot bar is visible. Related issue [#394](https://github.com/AppGyver/steroids/issues/394).
+- Fixed bug where Ad Hoc builds with a hidden status bar caused tabs to be offset upwards. Related issue [#392](https://github.com/AppGyver/steroids/issues/392).
+
 ### 3.5.0-edge-p2 (2014-06-17)
 
 Bugfixes:
