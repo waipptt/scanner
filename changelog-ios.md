@@ -6,40 +6,51 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
-## 3.5.0 (TODO)
+## 3.5.0 (2014-07-14)
 
-Updated Cordova version from v3.1 to v3.5, several bugfixes.
+Updated Cordova version from v3.1 to v3.5, added new API's for hiding all modals and replacing drawers, tons of bugfixes.
 
 Breaking changes:
 - Removed SQLite plugin from project default plugins. To use the SQLite plugin now it must be manually included through Build Service.
 
 Features:
-- Updated Cordova to match 3.5.0 features
+- Updated Cordova to match 3.5.0 features. Closes [#197](https://github.com/AppGyver/steroids/issues/197).
 - Updated all hardcoded plugins to latest versions
 - Configurable initial view that can be shown before actual app starts
-- API to replace tabs with totally new tabs with `steroids.tabs.replace`
-- API to hide all modals with `steroids.modal.hideAll`
+- API to replace tabs with totally new tabs with `steroids.tabs.replace`. Closes [#280](https://github.com/AppGyver/steroids/issues/280) and [#281](https://github.com/AppGyver/steroids/issues/281).
+- API to hide all modals with `steroids.modal.hideAll`. Closes [#218](https://github.com/AppGyver/steroids/issues/218).
+- Non-preloaded WebViews can now be used as drawers. Closes [#270](https://github.com/AppGyver/steroids/issues/270).
+- `steroids.drawers.hide` now allows non-preloaded WebViews to be used as new centers. Closes  [#413](https://github.com/AppGyver/steroids/issues/413)
+- More informative error message when QR code scanning was unsuccessful. Closes [#340](https://github.com/AppGyver/steroids/issues/340).
 
 Bugfixes:
-- Fixed a bug where the cancellation of the iOS7 native pop gesture would cause the app to break
-- Fixed a bug where calling `steroids.drawers.show` for the opposite edge when a drawer was open would cause the other drawer to open but for the drawer view not to update
-- Fixed a bug where iPad landscape-only builds would show the portrait splashscreen for a second during startup
-- Fixed a bug where alerts would crash if dismissed after the WebView that called the alert had been destroyed
-- Fixed a bug where the app would freeze after calling `steroids.view.setAllowedRotations`
-- Fixed a bug where using alerts would crash the iOS simulator
-- Fixed a bug where during a period of low memory warnings scanning another app would display yellow screen
-- Fixed a bug where navigation bar settings would wrongly transfer when opening a new view with different navigation bar settings but pressing the back button quickly enough would cause the original view to receive the navigation bar settings of the view that was going to be pushed.
-- Fixed a bug where preload array and drawers configurations in `application.coffee` would not persist when building Ad Hoc builds
-- Fixed a bug where `steroids.layers.replace` and `steroids.layers.push` would not work from a preloaded view not in the layer stack
-- Fixed a bug where calling `steroids.view.setBackgroundImage` would crash the app on restart or when closing a layer with `steroids.layers.pop`. Closes issue [#368](https://github.com/AppGyver/steroids/issues/368).
-- Fixed a bug where popping a layer would cause layout issues when the body element was shorter than the screen
-- Fixed a bug where `steroids.modal.show` could not be called from a drawer. Closes issue [#291](https://github.com/AppGyver/steroids/issues/291).
-- Fixed a bug where the app would crash when calling `steroids.screen.rotateTo` under certain conditions
-- Fixed a bug where modals would not respect orientations set with `steroids.view.setAllowedOrientations`. Closes issue [#313](https://github.com/AppGyver/steroids/issues/313).
-- Fixed a bug where using `steroids.layers.push` broke when trying to push a URL with a hash while using File Protocol. Closes issue [#206](https://github.com/AppGyver/steroids/issues/206).
-- Fixed a bug where `steroids.modal.hide` would not worked when called from non-modal views
+- Fixed a bug where the cancellation of the iOS7 native pop gesture would cause the app to break. Closes issue [#120](https://github.com/AppGyver/steroids/issues/120).
+- Fixed a bug where calling `steroids.drawers.show` for the opposite edge when a drawer was open would cause the other drawer to open but for the drawer view not to update. Closes issue [#402](https://github.com/AppGyver/steroids/issues/402).
 - Fixed a bug where drawer content would be overlapped by the status bar. Closes issue [#273](https://github.com/AppGyver/steroids/issues/273).
+- Fixed a bug where `steroids.modal.show` could not be called from a drawer. Closes issue [#291](https://github.com/AppGyver/steroids/issues/291).
+- Fixed a bug where modals would not respect orientations set with `steroids.view.setAllowedOrientations`. Closes issue [#313](https://github.com/AppGyver/steroids/issues/313).
+- Fixed a bug where `steroids.modal.hide` would not work when called from anywhere else than the modal. Closes issue [#315](https://github.com/AppGyver/steroids/issues/315).
+- Fixed a bug where modal could not be called from Cordova camera `onSuccess` callback. Closes issue [#444](https://github.com/AppGyver/steroids/issues/444).
+- Fixed a bug where iPad landscape-only builds would show the portrait splashscreen for a second during startup. Closes issue [#328](https://github.com/AppGyver/steroids/issues/328).
 - Fixed a bug where the navigation bar border would be positioned incorrectly in landscape apps.
+- Fixed a bug where in landscape-only iPad apps would show a half empty view on app reload. Closes issue [#389](https://github.com/AppGyver/steroids/issues/389).
+- Fixed a bug where calling `steroids.layers.pop` in an landscape-only app would crash the app. Closes issue [#276](https://github.com/AppGyver/steroids/issues/276).
+- Fixed a bug where alerts would crash if dismissed after the WebView that called the alert had been destroyed. Closes issue [#187](https://github.com/AppGyver/steroids/issues/187).
+- Fixed a bug where using alerts would crash the iOS simulator
+- Fixed a bug where the app would freeze after calling `steroids.view.setAllowedRotations`
+- Fixed a bug where during a period of low memory warnings scanning another app would display yellow screen
+- Fixed a bug where navigation bar settings would wrongly transfer when opening a new view with different navigation bar settings but pressing the back button quickly enough would cause the original view to receive the navigation bar settings of the view that was going to be pushed. Closes issue [#401](https://github.com/AppGyver/steroids/issues/401).
+- Fixed a bug where preload array and drawers configurations in `application.coffee` would not persist when building Ad Hoc builds. Closes issue [#369](https://github.com/AppGyver/steroids/issues/369).
+- Fixed a bug where popping a layer would cause layout issues when the body element was shorter than the screen
+- Fixed a bug where `steroids.layers.replace` and `steroids.layers.push` would not work from a preloaded view not in the layer stack. Closes issue [#377](https://github.com/AppGyver/steroids/issues/377).
+- Fixed a bug where using `steroids.layers.push` broke when trying to push a URL with a hash while using File Protocol. Closes issue [#206](https://github.com/AppGyver/steroids/issues/206).
+- Fixed a faulty success callback when calling `steroids.layers.push` incorrectly from inside a drawer. Closes issue [#335](https://github.com/AppGyver/steroids/issues/335).
+- Fixed a bug where calling `steroids.view.setBackgroundImage` would crash the app on restart or when closing a layer with `steroids.layers.pop`. Closes issue [#368](https://github.com/AppGyver/steroids/issues/368).
+- Fixed a bug where the Personal Hotspot bar shows yellow background when status bar gets hidden from the app. Closes issue [#394](https://github.com/AppGyver/steroids/issues/394).
+- Fixed a bug where the Personal Hotspot bar overlaps the navigation bar and displaced webview content. Closes issue [#393](https://github.com/AppGyver/steroids/issues/393).
+- Fixed a bug where an Ad Hoc build with the status bar hidden would cause tabs to be offset upwards. Closes issue [#392](https://github.com/AppGyver/steroids/issues/392).
+- Fixed a bug where in apps that had more than 5 tabs errant behavious was experienced when trying to choose tabs from under the More... tab. Closes issue [#116](https://github.com/AppGyver/steroids/issues/116).
+- Fixed a bug where the app would crash when calling `steroids.screen.rotateTo` under certain conditions
 
 ### 3.1.6-p4 (2014-06-03)
 
