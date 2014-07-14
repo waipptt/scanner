@@ -6,6 +6,41 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
+## 3.5.0 (TODO)
+
+Updated Cordova version from v3.1 to v3.5, several bugfixes.
+
+Breaking changes:
+- Removed SQLite plugin from project default plugins. To use the SQLite plugin now it must be manually included through Build Service.
+
+Features:
+- Updated Cordova to match 3.5.0 features
+- Updated all hardcoded plugins to latest versions
+- Configurable initial view that can be shown before actual app starts
+- API to replace tabs with totally new tabs with `steroids.tabs.replace`
+- API to hide all modals with `steroids.modal.hideAll`
+
+Bugfixes:
+- Fixed a bug where the cancellation of the iOS7 native pop gesture would cause the app to break
+- Fixed a bug where calling `steroids.drawers.show` for the opposite edge when a drawer was open would cause the other drawer to open but for the drawer view not to update
+- Fixed a bug where iPad landscape-only builds would show the portrait splashscreen for a second during startup
+- Fixed a bug where alerts would crash if dismissed after the WebView that called the alert had been destroyed
+- Fixed a bug where the app would freeze after calling `steroids.view.setAllowedRotations`
+- Fixed a bug where using alerts would crash the iOS simulator
+- Fixed a bug where during a period of low memory warnings scanning another app would display yellow screen
+- Fixed a bug where navigation bar settings would wrongly transfer when opening a new view with different navigation bar settings but pressing the back button quickly enough would cause the original view to receive the navigation bar settings of the view that was going to be pushed.
+- Fixed a bug where preload array and drawers configurations in `application.coffee` would not persist when building Ad Hoc builds
+- Fixed a bug where `steroids.layers.replace` and `steroids.layers.push` would not work from a preloaded view not in the layer stack
+- Fixed a bug where calling `steroids.view.setBackgroundImage` would crash the app on restart or when closing a layer with `steroids.layers.pop`. Closes issue [#368](https://github.com/AppGyver/steroids/issues/368).
+- Fixed a bug where popping a layer would cause layout issues when the body element was shorter than the screen
+- Fixed a bug where `steroids.modal.show` could not be called from a drawer. Closes issue [#291](https://github.com/AppGyver/steroids/issues/291).
+- Fixed a bug where the app would crash when calling `steroids.screen.rotateTo` under certain conditions
+- Fixed a bug where modals would not respect orientations set with `steroids.view.setAllowedOrientations`. Closes issue [#313](https://github.com/AppGyver/steroids/issues/313).
+- Fixed a bug where using `steroids.layers.push` broke when trying to push a URL with a hash while using File Protocol. Closes issue [#206](https://github.com/AppGyver/steroids/issues/206).
+- Fixed a bug where `steroids.modal.hide` would not worked when called from non-modal views
+- Fixed a bug where drawer content would be overlapped by the status bar. Closes issue [#273](https://github.com/AppGyver/steroids/issues/273).
+- Fixed a bug where the navigation bar border would be positioned incorrectly in landscape apps.
+
 ### 3.1.6-p4 (2014-06-03)
 
 - Fixed a bug where `steroids.layers.push` and `steroids.layers.replace` didn't work from a drawer or from a preloaded view that was not in the layer stack. Related issues [#335](https://github.com/AppGyver/steroids/issues/335) & [#377](https://github.com/AppGyver/steroids/issues/377).
