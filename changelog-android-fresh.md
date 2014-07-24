@@ -6,7 +6,7 @@
 
 * Implemented full Cordova support
 	* Support for Geolocation.
-	* Support for Cordova core events. Closes #363.
+	* Support for Cordova core events. Closes [#363](https://github.com/AppGyver/steroids/issues/363).
 	* Cordova plugin result is correctly available to the Steroids application.
 	* Complete Cordova support with full application life-cycle.
 	* Back button goes back in web history.
@@ -16,12 +16,12 @@
 	* display a loading indicator
 	* improved handling of different error situations
 	* display more exact error messages in device log on failures
-* Support different Android device orientations and building landscape-only apps. Closes #358
-* Support for serving files from `http://localhost` (WebKit runtimes, i.e. not Chromium Fresh Android). Closes #162.
+* Support different Android device orientations and building landscape-only apps. Closes [#358](https://github.com/AppGyver/steroids/issues/358)
+* Support for serving files from `http://localhost` (WebKit runtimes, i.e. not Chromium Fresh Android). Closes [#162](https://github.com/AppGyver/steroids/issues/162).
 	* Steroids project files
 	* UserFiles
 	* Support for the ".android." naming convention for Android specific files
-* Files defined in application.json's copy_to_user_files will be copied from project assets to UserFiles for write-access. Closes #428.
+* Files defined in application.json's copy_to_user_files will be copied from project assets to UserFiles for write-access. Closes [#428](https://github.com/AppGyver/steroids/issues/428).
 * Support for AdMob Cordova plugin
 * Support for more Steroids APIs:
 	* `steroids.statusBar.show` and `steroids.statusBar.hide`
@@ -32,7 +32,7 @@
 
 ###Bugfixes
 
-* Cordova Media APIs trigger success/error callbacks. Closes #458.
+* Cordova Media APIs trigger success/error callbacks. Closes [#458](https://github.com/AppGyver/steroids/issues/458).
 * FileTransfer Cordova plugin failure
 * Tapping "Go" in the keyboard did not dismiss the keyboard with Ionic tab bar
 * Steroids APIs that depend on SteroidsApplication were not functioning perfectly.
