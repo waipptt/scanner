@@ -1,5 +1,50 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 3.5.1 (2014-07-24)
+
+###Features
+
+* Implemented full Cordova support
+	* Support for Geolocation.
+	* Support for Cordova core events. Closes #363.
+	* Cordova plugin result is correctly available to the Steroids application.
+	* Complete Cordova support with full application life-cycle.
+	* Back button goes back in web history.
+* Improved Scanner's user interface:
+	* re-open and re-download buttons
+	* display human readable error messages
+	* display a loading indicator
+	* improved handling of different error situations
+	* display more exact error messages in device log on failures
+* Support different Android device orientations and building landscape-only apps. Closes #358
+* Support for serving files from `http://localhost` (WebKit runtimes, i.e. not Chromium Fresh Android). Closes #162.
+	* Steroids project files
+	* UserFiles
+	* Support for the ".android." naming convention for Android specific files
+* Files defined in application.json's copy_to_user_files will be copied from project assets to UserFiles for write-access. Closes #428.
+* Support for AdMob Cordova plugin
+* Support for more Steroids APIs:
+	* `steroids.statusBar.show` and `steroids.statusBar.hide`
+	* `steroids.screen.rotate`
+	* `steroids.app.host.getUrl`
+* JavaScript alert() dialog is now displayed.
+* Updated Contacts Cordova plugin to 0.2.11
+
+###Bugfixes
+
+* Cordova Media APIs trigger success/error callbacks. Closes #458.
+* FileTransfer Cordova plugin failure
+* Tapping "Go" in the keyboard did not dismiss the keyboard with Ionic tab bar
+* Steroids APIs that depend on SteroidsApplication were not functioning perfectly.
+* Fixed Cordova activity leak
+* Standalone reported wrong applicationFullPath
+
+###Known Issues
+
+* Cordova barcodeScanner is not included in core plugins
+* Cordova compass returns an initial heading of 0, subsequent calls work
+* `navigator.notification.beep` freezes the screen for duration of beep on Android 4.4
+
 ## 3.5.0-p1 (2014-06-12): Fresh Android Scanner in Google Play
 
 ###Features:
