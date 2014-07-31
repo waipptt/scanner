@@ -1,4 +1,12 @@
-## 3.5.1-edge-p1
+## 3.5.1-edge-p2 (2014-07-31)
+
+Features:
+- Facebook SDK is included by default (will be optional later), which allows the official
+  Cordova Facebook plugin to compile.
+
+
+
+## 3.5.1-edge-p1 (2014-07-31)
 
 Features:
 - Android keyboard's Go button triggers an event that can be used on Javascript side.
