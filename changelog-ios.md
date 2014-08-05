@@ -24,13 +24,13 @@ Features:
 - More informative error message when QR code scanning was unsuccessful. Closes [#340](https://github.com/AppGyver/steroids/issues/340).
 
 Bugfixes:
+- Fixed a bug where the `KeyboardShrinksView` parameter wasn't working in the 3.5.0-edge runtime. Closes issue [#404](https://github.com/AppGyver/steroids/issues/404).
 - Fixed a bug where the cancellation of the iOS7 native pop gesture would cause the app to break. Closes issue [#120](https://github.com/AppGyver/steroids/issues/120).
 - Fixed a bug where calling `steroids.drawers.show` for the opposite edge when a drawer was open would cause the other drawer to open but for the drawer view not to update. Closes issue [#402](https://github.com/AppGyver/steroids/issues/402).
 - Fixed a bug where drawer content would be overlapped by the status bar. Closes issue [#273](https://github.com/AppGyver/steroids/issues/273).
 - Fixed a bug where `steroids.modal.show` could not be called from a drawer. Closes issue [#291](https://github.com/AppGyver/steroids/issues/291).
 - Fixed a bug where modals would not respect orientations set with `steroids.view.setAllowedOrientations`. Closes issue [#313](https://github.com/AppGyver/steroids/issues/313).
 - Fixed a bug where `steroids.modal.hide` would not work when called from anywhere else than the modal. Closes issue [#315](https://github.com/AppGyver/steroids/issues/315).
-- Fixed a bug where modal could not be called from Cordova camera `onSuccess` callback. Closes issue [#444](https://github.com/AppGyver/steroids/issues/444).
 - Fixed a bug where iPad landscape-only builds would show the portrait splashscreen for a second during startup. Closes issue [#328](https://github.com/AppGyver/steroids/issues/328).
 - Fixed a bug where the navigation bar border would be positioned incorrectly in landscape apps.
 - Fixed a bug where in landscape-only iPad apps would show a half empty view on app reload. Closes issue [#389](https://github.com/AppGyver/steroids/issues/389).
