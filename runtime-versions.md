@@ -5,7 +5,7 @@ This document holds up-to-date information on the runtime versions used in vario
 ## iOS
 * **[App Store Scanner](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8):** 3.5.0
 * **Build Service Stable Builds:** 3.5.0
-* **Build Service Edge Builds:** 3.5.0-edge-p3
+* **Build Service Edge Builds:** 3.5.0
 * **App.io Cloud Simulator:** 3.5.0
 * **iOS Simulator (bundled with Steroids CLI):** 3.5.0
 
