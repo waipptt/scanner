@@ -1,4 +1,4 @@
-# Changelog for AppGyver Scanner for Android
+# Changelog for Legacy AppGyver Scanner for Android
 
 ##3.1.3 (2014-03-26)
 
