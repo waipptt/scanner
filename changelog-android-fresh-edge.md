@@ -1,3 +1,20 @@
+## 3.5.2-edge-p3 (2014-08-11)
+
+Features:
+
+- Steroids application can send logs to Steroids CLI (or any endpointUrl)
+- Opening appgyver:// schema will open the Fresh Android application.
+- AppGyver Cloud QR code can be used to load the Steroids Application.
+- Dispatch a Steroids event when Go button is pressed in the Android keyboard.
+
+Bug fixes:
+
+- Most of Android permissions required by Scanner are marked as optional, which allows eg. to download Scanner from Google Play even if the device doesn't have Camera.
+- Fixed crash caused by the QR code reader timing out or returning corrupted data.
+- Previously opened WebViews are properly closed when Scanned Steroids application is reloaded.
+- Fixed compatibility with the email composer Cordova plugin.
+
+
 ## 3.5.2-edge-p2 (2014-07-31)
 
 Features:
