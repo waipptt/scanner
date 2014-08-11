@@ -2,17 +2,17 @@
 
 Features:
 
-- Steroids application can send logs to Steroids CLI (or any endpointUrl)
-- Opening appgyver:// schema will open the Fresh Android application.
-- AppGyver Cloud QR code can be used to load the Steroids Application.
-- Dispatch a Steroids event when Go button is pressed in the Android keyboard.
+- A Steroids app can now send logs to Steroids CLI via `steroids.logger.log`.
+- Opening a link with the `appgyver://` schema will open the Fresh Android application.
+- An AppGyver Cloud QR code can be used to load a Steroids app.
+- An event (`steroids.keyboard.on` `actionButtonPressed`) is now dispatched when the Go button is pressed on the Android software keyboard.
 
 Bug fixes:
 
-- Most of Android permissions required by Scanner are marked as optional, which allows eg. to download Scanner from Google Play even if the device doesn't have Camera.
+- Most of Android permissions required by Scanner are marked as optional, which allows e.g. downloading the Scanner from Google Play even if the device doesn't have Camera.
 - Fixed crash caused by the QR code reader timing out or returning corrupted data.
 - Previously opened WebViews are properly closed when Scanned Steroids application is reloaded.
-- Fixed compatibility with the email composer Cordova plugin.
+- Fixed compatibility with the [email composer Cordova plugin](https://github.com/AppGyver/email-composer/).
 
 
 ## 3.5.2-edge-p2 (2014-07-31)
