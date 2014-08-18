@@ -6,6 +6,23 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
+## 3.5.1 (TODO)
+
+The Rotation API used by Steroids was completely rewritten, initial support for iOS8 and several bugfixes.
+
+Features:
+- Initial support for iOS8. Closes [#396](https://github.com/AppGyver/steroids/issues/396)
+- Added `waitTransitionEnd: true` parameter to `steroids.modal.show` to make it possible to force modal to wait for `layers.push` or similar to complete before showing the modal.
+- Rewrite of rotation API, new methods `steroids.screen.setAllowedRotations` (deprecates `steroids.view.setAllowedRotations`). Closes [#160](https://github.com/AppGyver/steroids/issues/160), [#250](https://github.com/AppGyver/steroids/issues/250), [#314](https://github.com/AppGyver/steroids/issues/314), [#317](https://github.com/AppGyver/steroids/issues/317), [#319](https://github.com/AppGyver/steroids/issues/319), [#320](https://github.com/AppGyver/steroids/issues/320), [#323](https://github.com/AppGyver/steroids/issues/323), [#341](https://github.com/AppGyver/steroids/issues/341), [#395](https://github.com/AppGyver/steroids/issues/395), [#405](https://github.com/AppGyver/steroids/issues/405) & [#455](https://github.com/AppGyver/steroids/issues/455).
+
+Bugfixes:
+- Fixed a bug where WebView height did not take navigationBar into account. Closes [#275](https://github.com/AppGyver/steroids/issues/275).
+- Fixed a bug where dismissing InitialView with status bar would render the navigationBar wonky during the animation. Closes [#321](https://github.com/AppGyver/steroids/issues/321).
+- Fixed a bug where using a malformed WebView in the WebView preloads array would cause all WebViews in the app to appear blank. Closes [#322](https://github.com/AppGyver/steroids/issues/322).
+- Fixed a bug where `steroids.navigationBar.setAppearance` would not change the `buttonTintColor` of existing buttons. Closes [#397](https://github.com/AppGyver/steroids/issues/397).
+- Fixed a bug where calling `steroids.initialView.dismiss` after layers have been pushed results in brief yellow screen. Closes [#427](https://github.com/AppGyver/steroids/issues/427).
+- Fixed a bug where a modal could not be opened from the onSuccess callback of Cordova Camera. Closes [#444](https://github.com/AppGyver/steroids/issues/444).
+
 ## 3.5.0 (2014-07-14)
 
 Updated Cordova version from v3.1 to v3.5, added new API's for hiding all modals and replacing drawers, tons of bugfixes.
