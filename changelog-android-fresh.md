@@ -1,5 +1,33 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 3.5.2: Stabilizing the SPA runtimes and support for Cloud QR codes (TODO)
+
+###Features:
+- AppGyver Cloud QR code can be used to load the Steroids Application. Closes [#459](https://github.com/AppGyver/steroids/issues/459).
+- Android keyboard's Go button triggers an event that can be used on Javascript side. Closes [#455](https://github.com/AppGyver/steroids/issues/445).
+- Opening appgyver:// schema will open the Fresh Android application.
+- Updated media-capture plugin to 0.3.1
+- Updated media plugin to 0.2.11
+- Updated file-transfer plugin to 0.4.4
+- Updated file plugin to 1.2.0
+- Updated camera plugin to 0.3.0
+- Facebook SDK is included by default (will be optional later), which allows the official
+	Cordova Facebook plugin to compile.
+- Complete support for Cordova's onMessage (required for plugins).
+- Steroids application can send logs to Steroids CLI (or any endpointUrl)
+
+###Bug fixes:
+- navigator.app.exitApp() now quits the application. Closes [#461](https://github.com/AppGyver/steroids/issues/461).
+- Previously opened WebViews are now closed after a scanned application is restarted. Closes [#301](https://github.com/AppGyver/steroids/issues/301).
+- Most of Android permissions required by Scanner are marked as optional, so that Fresh Scanner can be downloaded from Google Play to a wider range of devices.
+- Fixed crash caused by the QR code reader timing out or returning corrupted data.
+- Fixed compatibility with the email composer Cordova plugin.
+- Refresh Client no longer stops polling for updates if it encounters an error.
+
+###Known issues:
+- **Chromium Scanner builds don't work**, as the scanner crashes whenever a QR code is scanned. For Chromium Scanner, please build 3.5.1 instead. Issue [#490](https://github.com/AppGyver/steroids/issues/490).
+- Cordova's Capture video crashes on Android 4.4 devices after giving success callback. Issue [#491](https://github.com/AppGyver/steroids/issues/491).
+
 ## 3.5.1 (2014-07-24)
 
 ###Features
