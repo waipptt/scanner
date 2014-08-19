@@ -28,6 +28,7 @@
 - **Chromium Scanner builds don't work**, as the scanner crashes whenever a QR code is scanned. For Chromium Scanner, please build 3.5.1 instead. Issue [#490](https://github.com/AppGyver/steroids/issues/490).
 - Cordova's Capture video crashes on Android 4.4 devices after giving success callback. Issue [#491](https://github.com/AppGyver/steroids/issues/491).
 - Cordova's Geolocation's callbacks do not always work on all Android 4.0 devices. We haven't been able to pinpoint this yet, but are looking into the issue.
+- Cordova's Notification.beep does not work on all Android 4.0 and 4.1 devices.
 
 ## 3.5.1 (2014-07-24)
 
