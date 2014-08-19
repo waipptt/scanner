@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.2: Stabilizing the SPA runtimes and support for Cloud QR codes (TODO)
+## 3.5.2: Stabilizing the SPA runtimes and Cloud QR codes (TODO)
 
 ###Features:
 - AppGyver Cloud QR code can be used to load the Steroids Application. Closes [#459](https://github.com/AppGyver/steroids/issues/459).
