@@ -1,4 +1,4 @@
-## 3.5.3-edge-p1 (2014-08-22): Initial MPA Support and Updated Chromium
+## 3.5.3-edge-p1 (2014-08-22): Initial MPA and Updated Chromium
 
 Features:
 - Initial support for multi-page applications:
