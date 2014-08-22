@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.2: Stabilizing the SPA runtimes and Cloud QR codes (TODO)
+## 3.5.2 (2014-08-22): Stabilizing the SPA runtimes and Cloud QR codes
 
 ###Features:
 - AppGyver Cloud QR code can be used to load the Steroids Application. Closes [#459](https://github.com/AppGyver/steroids/issues/459).
@@ -29,7 +29,7 @@
 - Cordova's Geolocation's callbacks do not always work on all Android 4.0 devices. We haven't been able to pinpoint this yet, but are looking into the issue.
 - Cordova's Notification.beep does not work on all Android 4.0 and 4.1 devices.
 
-## 3.5.1 (2014-07-24)
+## 3.5.1 (2014-07-24): Cordova support, localhost and device orientations
 
 ###Features
 
