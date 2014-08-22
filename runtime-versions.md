@@ -16,4 +16,4 @@ This document holds up-to-date information on the runtime versions used in vario
 ## Fresh Android
 * **[Google Play Fresh Scanner](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en):** 3.5.1
 * **Build Service Stable Builds:** 3.5.2
-* **Build Service Edge Builds:** 3.5.2
+* **Build Service Edge Builds:** 3.5.3-edge-p1
