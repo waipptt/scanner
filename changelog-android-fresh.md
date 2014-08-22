@@ -25,6 +25,7 @@
 - Refresh Client no longer stops polling for updates if it encounters an error.
 
 ###Known issues:
+- **Many Cordova plugins don't initialize correctly on Android 4.0 and cause the build to constantly crash.** Same plugins work with Android 4.0 on Fresh Android 3.5.1 and on Android >= 4.1 in Fresh Android 3.5.2. This will be fixed in a patch ASAP. Issue [#493](https://github.com/AppGyver/steroids/issues/493)
 - Cordova's Capture video crashes on Android 4.4 devices after giving success callback. Issue [#491](https://github.com/AppGyver/steroids/issues/491).
 - Cordova's Geolocation's callbacks do not always work on all Android 4.0 devices. We haven't been able to pinpoint this yet, but are looking into the issue.
 - Cordova's Notification.beep does not work on all Android 4.0 and 4.1 devices.
