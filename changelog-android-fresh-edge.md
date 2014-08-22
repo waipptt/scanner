@@ -1,3 +1,30 @@
+## 3.5.3-edge-p1 (2014-08-22): Initial MPA Support and Updated Chromium
+
+Features:
+- Initial support for multi-page applications:
+  - Views can be pushed/popped in the layer stack.
+  - Modal can be displayed and hid.
+  - All modals can be closed at once.
+  - Basic animation for layer transitions.
+  - Preloaded views.
+  - Tab bar for selecting the current set of views on the screen.
+  - Back button navigates back in the current view stack.
+- Completely revamped Chromium internals
+  - Chromium is now provided by the [Crosswalk Project](https://crosswalk-project.org/).
+  - Chromium updated to M37 using Crosswalk-8.
+- Chromium runtime supports loading project assets from http://localhost.
+- Communicate between WebViews using JavaScript post messages.
+
+Known issues:
+- Chromium runtime supports only Single-Page apps ([#495](https://github.com/AppGyver/steroids/issues/495))
+  - Vote [issue XWALK-2012](https://crosswalk-project.org/jira/browse/XWALK-2012) on Crosswalk Jira to let them know You want multi-page apps.
+- Android 4.0 issues:
+  - Tab bar is not displayed correctly ([#494](https://github.com/AppGyver/steroids/issues/494))
+  - Cordova plugins for Steroids Addons do not initialize correctly ([#493](https://github.com/AppGyver/steroids/issues/493))
+- Android 2.3 is no longer supported starting from 3.5.3
+  - Release 3.5.2 will be stay available in Build Servier as a support release for Android 2.3.
+
+
 ## 3.5.2-edge-p3 (2014-08-11)
 
 Features:
