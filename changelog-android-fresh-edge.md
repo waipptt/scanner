@@ -1,3 +1,9 @@
+## 3.5.3-edge-p2 (2014-08-26)
+
+Bug fixes:
+- Fix crash which occurred if Tab Bar wasn't defined in application.coffee ([#497](https://github.com/AppGyver/steroids/issues/497))
+- Implement rest of Chromium WebView APIs required by Cordova
+
 ## 3.5.3-edge-p1 (2014-08-22): Initial MPA and Updated Chromium
 
 Features:
