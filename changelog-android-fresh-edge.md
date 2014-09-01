@@ -1,3 +1,27 @@
+## 3.5.3-edge3 (2014-09-01): Navigation bar
+
+New naming convention for edge versions: the "p" is now dropped out because too many people
+confused stable patch level releases (3.5.2-p2) with edges (3.5.2-edge-p2).
+This caused wrong version numbers being reported in bug reports.
+
+Features:
+- Navigation bar
+  - Back button returns to the previous WebView
+  - API calls
+    - show / hide the navigation bar
+    - set the navigation bar title
+
+Bug fixes:
+- Scanner intelligently selects the correct IP address from the scanned
+  QR code (fixes [#302](https://github.com/AppGyver/steroids/issues/302))
+- Tab Bar position is remembered when switching the frontmost activity,
+  for example: pause/resume the app, open the camera.
+  (fixes [#503](https://github.com/AppGyver/steroids/issues/503))
+- Exiting the app no longer causes Illegal State Exception
+  (fixes [#504](https://github.com/AppGyver/steroids/issues/504))
+- Scanner no longer runs out of memory with a one second polling interval
+  (fixes [#359](https://github.com/AppGyver/steroids/issues/359))
+
 ## 3.5.3-edge-p2 (2014-08-26)
 
 Bug fixes:
