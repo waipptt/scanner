@@ -1,3 +1,23 @@
+## 3.5.3-edge4 (2014-09-04): Styled scanner
+
+Features:
+- Scanner shares similar outlook with the AppGyver iOS client.
+- API for visibilityState returns values according to the WebView's visibility
+- Tab bar is displayed on the bottom by default to allow better multiplatform
+  consistency. Tab bar position can be changed in the future in `application.coffee`
+  and with `steroids.tabBar.update`.
+- WebViews have unique identifiers (UUID) available API calls.
+- Crosswalk runtimes updated to 8.37.189.7 with Chromium M37.0.2062.94 (closes [#485](https://github.com/AppGyver/steroids/issues/485))
+
+Bug fixes:
+- Back button now closes all open modals before exiting the app (fixes [#505](https://github.com/AppGyver/steroids/issues/505)).
+- WebView transitions now work with Android 4.0.
+- Tab bar no longer gets misaligned on Android 4.0 after orientation change (fixes [#494](https://github.com/AppGyver/steroids/issues/494)).
+- Preloaded views can be displayed multiple times (fixes [#510](https://github.com/AppGyver/steroids/issues/510)).
+- Navigation bar's visible size stays the same although different devices have
+  different pixel-densities.
+
+
 ## 3.5.3-edge3 (2014-09-01): Navigation bar
 
 New naming convention for edge versions: the "p" is now dropped out because too many people
