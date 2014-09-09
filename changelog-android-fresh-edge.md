@@ -1,3 +1,21 @@
+## 3.5.3-rc1 (2014-09-09): Styled navigation bar
+
+This is the first release candidate for 3.5.3-stable.
+
+Features:
+- Navigation bar looks more native by default.
+- Required permissions can be configured in the Build Service
+  (closes [#508](https://github.com/AppGyver/steroids/issues/508))
+
+Bug fixes:
+- URLs with a double slash no longer give an error message,
+  eg. `http://localhost//index.html` (fixes [#514](https://github.com/AppGyver/steroids/issues/514))
+- Scanned URL is correctly remembered when opening a previously scanned app
+  (fixes [#513](https://github.com/AppGyver/steroids/issues/513))
+- Back button no longer wraps into two lines on small screens
+  (fixes [#512](https://github.com/AppGyver/steroids/issues/512))
+
+
 ## 3.5.3-edge4 (2014-09-04): Styled scanner
 
 Features:
