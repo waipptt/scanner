@@ -1,5 +1,43 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 3.5.3 (TODO): Initial MPA and updated Chromium
+
+### Features:
+- Initial support for multi-page applications:
+  - Views can be pushed/popped in the layer stack
+    - WebViews have unique identifiers (UUID) available API calls
+  - Modal can be displayed and hid
+  - All modals can be closed at once
+  - Basic animation for layer transitions
+  - Preloaded views
+  - Tab bar for selecting the current set of views on the screen
+    - Tab bar is displayed on the bottom by default to allow better multiplatform
+  consistency. Tab bar position can be changed in the future in `application.coffee`
+  and with `steroids.tabBar.update`
+  - Navigation Bar with back button can be shown and hidden and its title can be set
+  - Back button navigates back in the current view stack
+  - API for visibilityState returns values according to the WebView's visibility
+  - Post Messages for communicating between WebViews
+- Completely revamped Chromium internals
+  - Chromium is now provided by the [Crosswalk Project](https://crosswalk-project.org/)
+  - Crosswalk runtimes updated to 8.37.189.7 with Chromium M37.0.2062.94. Closes [#485](https://github.com/AppGyver/steroids/issues/485).
+- Chromium runtime supports loading project assets from http://localhost
+- Implement rest of Chromium WebView APIs required by Cordova
+- Scanner shares similar outlook with the AppGyver iOS client
+
+### Bugfixes:
+- Scanner intelligently selects the correct IP address from the scanned
+  QR code. Closes [#302](https://github.com/AppGyver/steroids/issues/302).
+- Scanner no longer runs out of memory with a one second polling interval Closes [#359](https://github.com/AppGyver/steroids/issues/359).
+
+### Known issues:
+- Chromium runtime supports only Single-Page apps. Issue [#495](https://github.com/AppGyver/steroids/issues/495).
+  - Vote [issue XWALK-2012](https://crosswalk-project.org/jira/browse/XWALK-2012) on Crosswalk Jira to let them know You want multi-page apps.
+- Android 4.0 issues:
+  - Cordova plugins for Steroids Addons do not initialize correctly. Issue [#493](https://github.com/AppGyver/steroids/issues/493).
+- Android 2.3 is no longer supported starting from 3.5.3
+  - Release 3.5.2 will be stay available in Build Servier as a support release for Android 2.3.
+
 ## 3.5.2 (2014-08-22): Stabilizing the SPA runtimes and Cloud QR codes
 
 ###Features:
