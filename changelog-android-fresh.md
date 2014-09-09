@@ -1,42 +1,71 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.3 (TODO): Initial MPA and updated Chromium
+## 3.5.3 (TODO): Fresh Android replaces Legacy Android
 
 ### Features:
-- Initial support for multi-page applications:
-  - Views can be pushed/popped in the layer stack
-    - WebViews have unique identifiers (UUID) available API calls
-  - Modal can be displayed and hid
-  - All modals can be closed at once
-  - Basic animation for layer transitions
-  - Preloaded views
-  - Tab bar for selecting the current set of views on the screen
-    - Tab bar is displayed on the bottom by default to allow better multiplatform
-  consistency. Tab bar position can be changed in the future in `application.coffee`
-  and with `steroids.tabBar.update`
-  - Navigation Bar with back button can be shown and hidden and its title can be set
-  - Back button navigates back in the current view stack
+- Support for multi-page applications:
+  - Views can be pushed/popped in the layer stack.
+  - Modal can be displayed and hid.
+  - All modals can be closed at once.
+  - Basic animation for layer transitions.
+  - Preloaded views.
+  - Tab bar for selecting the current set of views on the screen.
+  - Back button navigates back in the current view stack.
   - API for visibilityState returns values according to the WebView's visibility
-  - Post Messages for communicating between WebViews
+  - WebViews have unique identifiers (UUID) available API calls.
+  - Tab bar is displayed on the bottom by default to allow better multiplatform
+    consistency. Tab bar position can be changed in the future in `application.coffee`
+    and with `steroids.tabBar.update`.
+- Navigation Bar
+  - Back button takes to the previous WebView
+  - API calls
+    - show / hide the navigation bar
+    - set the navigation bar title
 - Completely revamped Chromium internals
-  - Chromium is now provided by the [Crosswalk Project](https://crosswalk-project.org/)
-  - Crosswalk runtimes updated to 8.37.189.7 with Chromium M37.0.2062.94. Closes [#485](https://github.com/AppGyver/steroids/issues/485).
-- Chromium runtime supports loading project assets from http://localhost
-- Implement rest of Chromium WebView APIs required by Cordova
-- Scanner shares similar outlook with the AppGyver iOS client
+  - Chromium is now provided by the [Crosswalk Project](https://crosswalk-project.org/).
+  - Crosswalk 8.37.189.7 with Chromium M37.0.2062.94
+    (closes [#485](https://github.com/AppGyver/steroids/issues/485))
+- Chromium runtime supports loading project assets from http://localhost.
+- Required permissions can be configured in the Build Service
+  (closes [#508](https://github.com/AppGyver/steroids/issues/508))
+- Scanner shares similar outlook with the AppGyver iOS client.
+- Communicate between WebViews using JavaScript post messages.
+
 
 ### Bugfixes:
+- URLs with a double slash no longer give an error message,
+  eg. `http://localhost//index.html` (fixes [#514](https://github.com/AppGyver/steroids/issues/514))
+- Scanned URL is correctly remembered when opening a previously scanned app
+  (fixes [#513](https://github.com/AppGyver/steroids/issues/513))
+- Back button no longer wraps into two lines on small screens
+  (fixes [#512](https://github.com/AppGyver/steroids/issues/512))
+- Back button closes all open modals before exiting the app (fixes [#505](https://github.com/AppGyver/steroids/issues/505)).
+- WebView transitions are performed with Android 4.0.
+- Tab bar no longer gets misaligned on Android 4.0 after orientation change (fixes [#494](https://github.com/AppGyver/steroids/issues/494)).
+- Preloaded views can be displayed multiple times (fixes [#510](https://github.com/AppGyver/steroids/issues/510)).
+- Navigation bar's visible size stays the same even different devices have
+  different pixel-densities.
 - Scanner intelligently selects the correct IP address from the scanned
-  QR code. Closes [#302](https://github.com/AppGyver/steroids/issues/302).
-- Scanner no longer runs out of memory with a one second polling interval Closes [#359](https://github.com/AppGyver/steroids/issues/359).
+  QR code (fixes [#302](https://github.com/AppGyver/steroids/issues/302))
+- Tab Bar position is remembered when switching the frontmost activity,
+  for example: pause/resume the app, open the camera.
+  (fixes [#503](https://github.com/AppGyver/steroids/issues/503))
+- Exiting the app no longer causes Illegal State Exception
+  (fixes [#504](https://github.com/AppGyver/steroids/issues/504))
+- Scanner no longer runs out of memory with a one second polling interval
+  (fixes [#359](https://github.com/AppGyver/steroids/issues/359))
+- Fix crash which occurred if Tab Bar wasn't defined in application.coffee ([#497](https://github.com/AppGyver/steroids/issues/497))
+- Implement rest of Chromium WebView APIs required by Cordova
 
 ### Known issues:
-- Chromium runtime supports only Single-Page apps. Issue [#495](https://github.com/AppGyver/steroids/issues/495).
+- Chromium runtime supports only Single-Page apps ([#495](https://github.com/AppGyver/steroids/issues/495))
   - Vote [issue XWALK-2012](https://crosswalk-project.org/jira/browse/XWALK-2012) on Crosswalk Jira to let them know You want multi-page apps.
 - Android 4.0 issues:
-  - Cordova plugins for Steroids Addons do not initialize correctly. Issue [#493](https://github.com/AppGyver/steroids/issues/493).
+  - Tab bar is not displayed correctly ([#494](https://github.com/AppGyver/steroids/issues/494))
+  - Cordova plugins for Steroids Addons do not initialize correctly ([#493](https://github.com/AppGyver/steroids/issues/493))
 - Android 2.3 is no longer supported starting from 3.5.3
   - Release 3.5.2 will be stay available in Build Servier as a support release for Android 2.3.
+
 
 ## 3.5.2 (2014-08-22): Stabilizing the SPA runtimes and Cloud QR codes
 
