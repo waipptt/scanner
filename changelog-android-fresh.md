@@ -58,8 +58,10 @@
 - Implement rest of Chromium WebView APIs required by Cordova
 
 ### Known issues:
-- Chromium runtime supports only Single-Page apps ([#495](https://github.com/AppGyver/steroids/issues/495))
-  - Vote [issue XWALK-2012](https://crosswalk-project.org/jira/browse/XWALK-2012) on Crosswalk Jira to let them know You want multi-page apps.
+- Viewport size must be defined in the HTML or content will appear as zoomed out
+  ([#297](https://github.com/AppGyver/steroids/issues/297))
+- Chromium runtime doesn't handle device button events correctly
+  ([#519](https://github.com/AppGyver/steroids/issues/519))
 - Android 4.0 issues:
   - Tab bar is not displayed correctly ([#494](https://github.com/AppGyver/steroids/issues/494))
   - Cordova plugins for Steroids Addons do not initialize correctly ([#493](https://github.com/AppGyver/steroids/issues/493))

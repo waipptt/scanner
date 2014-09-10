@@ -1,3 +1,16 @@
+## 3.5.3-rc2 (2014-09-10): Multipage apps with Chromium
+
+Bug fixes:
+- Applied a workaround to get multipage support on Chromium
+  (closes [#495](https://github.com/AppGyver/steroids/issues/495))
+
+Known issues:
+- Viewport size must be defined in the HTML or content will appear as zoomed out
+  ([#297](https://github.com/AppGyver/steroids/issues/297))
+- Chromium runtime doesn't handle device button events correctly
+  ([#519](https://github.com/AppGyver/steroids/issues/519))
+
+
 ## 3.5.3-rc1 (2014-09-09): Styled navigation bar
 
 This is the first release candidate for 3.5.3-stable.
