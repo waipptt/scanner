@@ -8,6 +8,17 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.2-edge1 (2014-09-12)
+
+Bugfixes:
+- False success callback was invoked when trying to update a non-preloaded view to drawer (fixes [#438](https://github.com/AppGyver/steroids/issues/438))
+- iOS8 fixes:
+  - Full drawer support
+  - Full modal support
+  - Taking a screenshot and scrolling no longer clears webview content
+  - Keyboard accessory bar can now be disabled
+
+
 ### 3.5.0-edge-p3 (2014-07-01)
 
 Bugfixes:
