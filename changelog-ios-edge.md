@@ -15,9 +15,6 @@ Bugfixes:
 - iOS8 fixes:
   - Full drawer support
   - Full modal support
-  - Taking a screenshot and scrolling no longer clears webview content
-  - Keyboard accessory bar can now be disabled
-
 
 ### 3.5.0-edge-p3 (2014-07-01)
 
