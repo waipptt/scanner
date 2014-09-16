@@ -1,3 +1,11 @@
+## 3.5.3-rc3 (2014-09-16): Return proper 404 errors in http://localhost
+
+Bug fixes:
+- Return HTTP 404 Not Found when an asset from http://localhost does not
+  exist. Previously "Connection Refused" was the result which caused problems.
+  (fixes [#524](https://github.com/AppGyver/steroids/issues/524))
+
+
 ## 3.5.3-rc2 (2014-09-10): Multipage apps with Chromium
 
 Bug fixes:

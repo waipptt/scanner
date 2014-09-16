@@ -33,6 +33,9 @@
 
 
 ### Bugfixes:
+- Return HTTP 404 Not Found when an asset from http://localhost does not
+  exist. Previously "Connection Refused" was the result which caused problems.
+  (fixes [#524](https://github.com/AppGyver/steroids/issues/524))
 - URLs with a double slash no longer give an error message,
   eg. `http://localhost//index.html` (fixes [#514](https://github.com/AppGyver/steroids/issues/514))
 - Scanned URL is correctly remembered when opening a previously scanned app
