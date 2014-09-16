@@ -6,6 +6,21 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
+## 3.5.2 (TODO)
+
+Minor bugfixes and ensuring iOS8 compatibility.
+
+Bugfixes:
+- Tab alignment which was broken in iOS 7.0 has now been confirmed to be fixed. Closes [#84](https://github.com/AppGyver/steroids/issues/84).
+- Changing navbar appearance more than once causes navbar to not update its appearance before the navbar is visible on screen on iOS7.1
+- False success callback was invoked when trying to update a non-preloaded view to drawer (fixes [#438](https://github.com/AppGyver/steroids/issues/438))
+- iOS8 SDK was used when building the Scanner. This fixes the bug with yellow drawers experienced with iOS8. (Build Service has also been updated to use the iOS8 SDK, so all 3.5.1 and 3.5.2 builds are iOS8 compatible)
+
+Known issues:
+- In iOS8, taking a screenshot and scrolling clears all webview content due to Apple's base64 bug
+- In iOS8, the keyboard accessory bar can not (at least currently) be disabled because of the new predictive text feature in iOS8
+- In iOS8, `previewFileView` does not work correctly
+
 ## 3.5.1 (2014-08-22)
 
 The Rotation API used by Steroids was completely rewritten, initial support for iOS8 and several bugfixes.
