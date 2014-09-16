@@ -13,7 +13,7 @@ Minor bugfixes and ensuring iOS8 compatibility.
 Bugfixes:
 - Tab alignment which was broken in iOS 7.0 has now been confirmed to be fixed. Closes [#84](https://github.com/AppGyver/steroids/issues/84).
 - Changing navbar appearance more than once causes navbar to not update its appearance before the navbar is visible on screen on iOS7.1
-- False success callback was invoked when trying to update a non-preloaded view to drawer (fixes [#438](https://github.com/AppGyver/steroids/issues/438))
+- False success callback was invoked when trying to update a non-preloaded view to drawer. Closes [#438](https://github.com/AppGyver/steroids/issues/438).
 - iOS8 SDK was used when building the Scanner. This fixes the bug with yellow drawers experienced with iOS8. (Build Service has also been updated to use the iOS8 SDK, so all 3.5.1 and 3.5.2 builds are iOS8 compatible)
 
 Known issues:
