@@ -62,8 +62,8 @@
 
 ### Known issues:
 - Viewport size must be defined in the HTML or content will appear as zoomed out
-  ([#297](https://github.com/AppGyver/steroids/issues/297))
-- Chromium runtime doesn't handle device button events correctly
+  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER. 
+- Chromium runtime doesn't handle device button events correctly and crashes sometimes on e.g. backbutton event
   ([#519](https://github.com/AppGyver/steroids/issues/519))
 - Android 4.0 issues:
   - Cordova plugins for Steroids Addons do not initialize correctly ([#493](https://github.com/AppGyver/steroids/issues/493))
