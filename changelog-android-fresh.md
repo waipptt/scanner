@@ -9,6 +9,7 @@
   - All modals can be closed at once.
   - Basic animation for layer transitions.
   - Preloaded views.
+  	- Views can be preloaded in the preloads array in `application.coffee`.
   - Tab bar for selecting the current set of views on the screen.
   - Back button navigates back in the current view stack.
   - API for visibilityState returns values according to the WebView's visibility
