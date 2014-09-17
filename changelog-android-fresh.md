@@ -66,7 +66,6 @@
 - Chromium runtime doesn't handle device button events correctly
   ([#519](https://github.com/AppGyver/steroids/issues/519))
 - Android 4.0 issues:
-  - Tab bar is not displayed correctly ([#494](https://github.com/AppGyver/steroids/issues/494))
   - Cordova plugins for Steroids Addons do not initialize correctly ([#493](https://github.com/AppGyver/steroids/issues/493))
 - Android 2.3 is no longer supported starting from 3.5.3
   - Release 3.5.2 will be stay available in Build Servier as a support release for Android 2.3.
