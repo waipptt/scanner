@@ -62,7 +62,9 @@
 - Implement rest of Chromium WebView APIs required by Cordova
 
 ### Known issues:
-- Viewport size must be defined in the HTML or content will appear as zoomed out
+- When pushing a layer or opening a modal the WebView blinks as black (white on Chromium) ([#525](https://github.com/AppGyver/steroids/issues/525)).
+- When using Tab Bar, the app sometimes opens with empty tabs or shows the wrong content in the tabs ([#526](https://github.com/AppGyver/steroids/issues/526)). This corrects itself when the tabs are clicked on a few times.
+- On Chromium Viewport size must be defined in the HTML or content will appear as zoomed out
   ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER. 
 - Chromium runtime doesn't handle device button events correctly and crashes sometimes on e.g. backbutton event
   ([#519](https://github.com/AppGyver/steroids/issues/519))
