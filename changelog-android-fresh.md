@@ -40,24 +40,12 @@
   eg. `http://localhost//index.html` (fixes [#514](https://github.com/AppGyver/steroids/issues/514))
 - Scanned URL is correctly remembered when opening a previously scanned app
   (fixes [#513](https://github.com/AppGyver/steroids/issues/513))
-- Back button no longer wraps into two lines on small screens
-  (fixes [#512](https://github.com/AppGyver/steroids/issues/512))
-- Back button closes all open modals before exiting the app (fixes [#505](https://github.com/AppGyver/steroids/issues/505)).
-- WebView transitions are performed with Android 4.0.
-- Tab bar no longer gets misaligned on Android 4.0 after orientation change (fixes [#494](https://github.com/AppGyver/steroids/issues/494)).
-- Preloaded views can be displayed multiple times (fixes [#510](https://github.com/AppGyver/steroids/issues/510)).
-- Navigation bar's visible size stays the same even different devices have
-  different pixel-densities.
 - Scanner intelligently selects the correct IP address from the scanned
   QR code (fixes [#302](https://github.com/AppGyver/steroids/issues/302))
-- Tab Bar position is remembered when switching the frontmost activity,
-  for example: pause/resume the app, open the camera.
-  (fixes [#503](https://github.com/AppGyver/steroids/issues/503))
 - Exiting the app no longer causes Illegal State Exception
   (fixes [#504](https://github.com/AppGyver/steroids/issues/504))
 - Scanner no longer runs out of memory with a one second polling interval
   (fixes [#359](https://github.com/AppGyver/steroids/issues/359))
-- Fix crash which occurred if Tab Bar wasn't defined in application.coffee ([#497](https://github.com/AppGyver/steroids/issues/497))
 - Implement rest of Chromium WebView APIs required by Cordova
 
 ### Known issues:
