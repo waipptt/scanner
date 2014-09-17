@@ -69,6 +69,9 @@
   ([#519](https://github.com/AppGyver/steroids/issues/519))
 - Android 4.0 issues:
   - Cordova plugins for Steroids Addons do not initialize correctly ([#493](https://github.com/AppGyver/steroids/issues/493))
+  - No animations
+  - On some older devices on Chromium `layers.push` and `modal.show` do not work and crash the app
+  - On some older devices opening modals on top of modals does not work
 - Android 2.3 is no longer supported starting from 3.5.3
   - Release 3.5.2 will be stay available in Build Servier as a support release for Android 2.3.
 
