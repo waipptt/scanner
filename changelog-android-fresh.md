@@ -12,7 +12,6 @@
   	- Views can be preloaded in the preloads array in `application.coffee`.
   - Tab bar for selecting the current set of views on the screen.
   - Back button navigates back in the current view stack.
-  - API for visibilityState returns values according to the WebView's visibility
   - WebViews have unique identifiers (UUID) available API calls.
   - Tab bar is displayed on the bottom by default to allow better multiplatform
     consistency. Tab bar position can be changed in the future in `application.coffee`
