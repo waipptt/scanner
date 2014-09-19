@@ -1,3 +1,23 @@
+## 3.5.4-edge1 (2014-09-19): Navigation Bar buttons and Loading.html
+
+Features:
+- Navigation Bar modification methods available:
+  - Back button text can be modified and replaced with an image
+  - Back button can be overridden
+  - Navigation Bar can have an image as the title
+  - Navigation Bar can have multiple custom buttons
+    - both image and text are supported
+- Status bar onSuccess and onFailure callbacks on show and hide
+- Loading.html is shown when WebView is pushing, tabs are loading or a modal is shown.
+- Tab Bar icons can be set in `config/application.coffee`
+
+Known issues:
+- Setting a custom back button title makes the nav bar title misalign
+- If navigation bar title is set to be an image, it disappears if other buttons have been modified
+- Scrolling can be quite clunky at times
+- Loading.html does not show after resetting app to InitialView
+- Re-download from Scanner crashes the app
+
 ## 3.5.3-rc3 (2014-09-16): Return proper 404 errors in http://localhost
 
 Bug fixes:
