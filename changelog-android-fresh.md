@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
-## 3.5.3 (TODO): Fresh Android replaces Legacy Android
+## 3.5.3 (2014-09-18): Fresh Android replaces Legacy Android
 
 ### Features:
 - Support for multi-page applications:
