@@ -1,4 +1,4 @@
-## 3.5.4-edge1 (2014-09-19): Navigation Bar buttons and Loading.html
+## 3.5.4-edge1 (2014-09-19): Navigation Bar buttons and Initial View
 
 Features:
 - Navigation Bar modification methods available:
@@ -7,6 +7,7 @@ Features:
   - Navigation Bar can have an image as the title
   - Navigation Bar can have multiple custom buttons
     - both image and text are supported
+- InitialView can be shown, dismissed and app can be resetted to it
 - Status bar onSuccess and onFailure callbacks on show and hide
 - Loading.html is shown when WebView is pushing, tabs are loading or a modal is shown.
 - Tab Bar icons can be set in `config/application.coffee`
