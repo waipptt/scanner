@@ -19,7 +19,7 @@ Bugfixes:
 Known issues:
 - In iOS8, taking a screenshot and scrolling clears all webview content due to Apple's base64 bug
 - In iOS8, the keyboard accessory bar can not (at least currently) be disabled because of the new predictive text feature in iOS8
-- In iOS8, `previewFileView` does not work correctly
+- In iOS8, `previewFileView` does not work correctly. Issue [#528](https://github.com/AppGyver/steroids/issues/528).
 
 ## 3.5.1 (2014-08-22)
 
