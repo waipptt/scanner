@@ -10,7 +10,6 @@ Features:
 - InitialView can be shown, dismissed and app can be resetted to it
 - Status bar onSuccess and onFailure callbacks on show and hide
 - Loading.html is shown when WebView is pushing, tabs are loading or a modal is shown.
-- Tab Bar icons can be set in `config/application.coffee`
 
 Known issues:
 - Setting a custom back button title makes the nav bar title misalign
