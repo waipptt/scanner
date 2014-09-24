@@ -8,6 +8,12 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.3-edge1 (2014-09-24)
+
+iOS8 fixes for [#534](https://github.com/AppGyver/steroids/issues/534):
+- Updated Cordova submodule to iOS 8 compatibility commit
+- Updated hardcoded Cordova plugins for iOS 8 compatibility. See versions [here](https://academy.appgyver.com/categories/7-extending-with-plugins/contents/146-default-plugins).
+
 ### 3.5.2-edge1 (2014-09-12)
 
 Bugfixes:
