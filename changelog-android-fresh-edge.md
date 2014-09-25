@@ -1,3 +1,27 @@
+## 3.5.4-edge2 (2014-09-25): Initial Drawer
+
+Features:
+- Drawer can be initialized from application.coffee.
+- Support window.AG_* constants
+  - AG_CLIENT_VERSION
+  - AG_APP_STARTUP_URL (only for Scanner currently)
+  - AG_WEBVIEW_UUID
+  - AG_WEBVIEW_UDID (legacy attribute, will be removed later)
+- Scanner version is the code defined in the Build Service.
+- Make Cordova's ScrollEvent class available to Cordova plugins.
+- Include hardcoded Open GL 2 version in default Android Manifest for
+  Google Maps plugin support. This will be fixed properly by providing this is
+  as a user configurable option.
+
+Bug fixes:
+- Opening two Steroids layers no longer result in two WebViews being created.
+- Preloads are no longer loaded before Initial View is dismissed.
+- Sending a post message caused a NPE when application was shutting down.
+- Resetting application to initial view caused next initial view dismissal to fail.
+- Displaying a WebView no longer causes a nasty blink.
+- CordovaWebView#reload() expected by plugins is now implemented.
+
+
 ## 3.5.4-edge1 (2014-09-19): Navigation Bar buttons and Initial View
 
 Features:
