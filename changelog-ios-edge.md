@@ -8,11 +8,23 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.3-edge2: Styling Native UI with CSS
+
+Features:
+- Native UI can be styled with CSS syntax (Pixate).
+  - Styles can be provided from `dist/native-styles/default.css`
+
+Bug fixes:
+- Backported Cordova fixes for iOS8:
+  - https://github.com/apache/cordova-ios/commit/b06ca8db4288f47e99f32294080106884e236d47
+  - https://github.com/apache/cordova-ios/commit/6329027c4a35d18d85dcc5bcd0ee3a6d34fe2421
+
 ### 3.5.3-edge1 (2014-09-24)
 
 iOS8 fixes for [#534](https://github.com/AppGyver/steroids/issues/534):
 - Updated Cordova submodule to iOS 8 compatibility commit
-- Updated hardcoded Cordova plugins for iOS 8 compatibility. See versions [here](https://academy.appgyver.com/categories/7-extending-with-plugins/contents/146-default-plugins).
+- Updated hardcoded Cordova plugins for iOS 8 compatibility.
+  See versions [here](https://academy.appgyver.com/categories/7-extending-with-plugins/contents/146-default-plugins).
 
 ### 3.5.2-edge1 (2014-09-12)
 
@@ -102,4 +114,3 @@ Bugfixes:
   - `steroids.layers.popAll()` now remembers root WebView's navigation bar visibility state correctly. Will close [#295](https://github.com/AppGyver/steroids/issues/295).
   - Setting a custom back button immediately after a page is pushed no longer causes overlapping buttons. Will close [#145](https://github.com/AppGyver/steroids/issues/145).
   - Fixed issue where WebView top inset was offset by status bar height after presenting the Cordova Camera. Will close [#296](https://github.com/AppGyver/steroids/issues/296)
-
