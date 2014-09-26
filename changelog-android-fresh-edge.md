@@ -1,5 +1,7 @@
 ## 3.5.4-edge2 (2014-09-25): Initial Drawer
 
+**3.5.4-edge2 was hidden from Build Service on 26th September due to the edge being broken and not firing Steroids ready event.**
+
 Features:
 - Drawer can be initialized from application.coffee.
 - Support window.AG_* constants
