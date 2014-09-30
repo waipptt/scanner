@@ -8,6 +8,25 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.3-edge3: APIs for Native UI styling
+
+Features:
+- API calls for styling Native UI with CSS:
+  - API methods setStyle and setClass for Tab Bar and Navigation Bar
+  - API method setTheme to apply a set of styles at once
+- steroids.screen.dismissNextAlert mainly for test automation
+- steroids.view.navigationBar.tapButton mainly for test automation
+
+Bug fixes:
+- Cordova Plugins which included a native framework couldn't be compiled
+  (affected only 3.5.3-edge1 and 3.5.3-edge2).
+- PreviewFileView didn't display pdf on iOS8
+  (fixes [#528](https://github.com/AppGyver/steroids/issues/528))
+- If called from modal, navigator.camera.getPicture closed the modal after it's callbacks
+  (fixes [#465](https://github.com/AppGyver/steroids/issues/465))
+- Allow `steroids.layers.replace` to be used even when the target view is in the layer stack
+  (fixes [#411](https://github.com/AppGyver/steroids/issues/411))
+
 ### 3.5.3-edge2: Styling Native UI with CSS
 
 Features:
