@@ -8,6 +8,19 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.3-edge4: Fix edge3
+
+Features:
+- Add window.AG_WEBVIEW_UUID which gives out same value as window.AG_WEBVIEW_UDID.
+  The latter will be deprecated.
+
+Bug fixes:
+- Fixed http://localhost which was broken in 3.5.3-edge3
+- iOS 8 location services caused a "legacy on-demand authorization" error
+  (fixes [#544](https://github.com/AppGyver/steroids/issues/544))
+- Fixed typo in Drawer options (strechDrawer -> stretchDrawer)
+
+
 ### 3.5.3-edge3: APIs for Native UI styling
 
 Features:
