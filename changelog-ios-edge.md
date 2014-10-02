@@ -8,6 +8,18 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.3-rc2:
+
+Changes:
+- Switched included Cordova Keyboard plugin to the
+  [Ionic Keyboard plugin](https://github.com/driftyco/ionic-plugins-keyboard/)
+  (fixes [#550](https://github.com/AppGyver/steroids/issues/550))
+- Keyboard settings can no longer be configured app-wide in `config.ios.xml`.
+
+Bug fixes:
+- Opening the Photo Library caused a crash on iOS 8.
+
+
 ### 3.5.3-edge4: Fix edge3
 
 Features:
