@@ -8,6 +8,14 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 3.5.3-rc3:
+
+Bugfixes:
+- Text area lost focus and had other erratic behaviour when orientation was changed
+  while having the keyboard open.
+  (fixes [#467](https://github.com/AppGyver/steroids/issues/467))
+
+
 ### 3.5.3-rc2:
 
 Changes:
