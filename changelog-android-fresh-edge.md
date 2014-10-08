@@ -1,3 +1,24 @@
+## 3.5.4-edge3 (2014-10-08): Native Styling with CSS
+
+Features:
+- Style Native UI elements with CSS (Pixate).
+  - Define styles in `dist/native-styles/default.css`.
+  - API for `setStyle`, `setClass` and `setId`.
+  - Supported elements: Navigation Bar, Buttons, Tab Bar.
+- Output WebView console.log messages using INFO log level
+  (ie. visible on production builds).
+- Remove permission `DOWNLOAD_WITHOUT_NOTIFICATION` which is no longer needed.
+- Set WebView default background color to white.
+- Load Scanned Application in an emulator without requiring to scan the QR code.
+- Implement API for `steroids.tabBar.update`.
+
+Bug fixes:
+- Steroids.on event didn't fire properly on 3.5.4-edge2.
+- When using Tab Bar, sometimes a wrong WebView is visible with Chromium
+  (fixes [#526](https://github.com/AppGyver/steroids/issues/526)).
+- Loading.html wasn't displayed after starting the application from Initial View.
+
+
 ## 3.5.4-edge2 (2014-09-25): Initial Drawer
 
 **3.5.4-edge2 was hidden from Build Service on 26th September due to the edge being broken and not firing Steroids ready event.**
