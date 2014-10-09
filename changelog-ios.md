@@ -20,10 +20,10 @@ Features:
 - Native UI can be styled with CSS syntax (Pixate).
   - Styles can be provided from `dist/native-styles/default.css`
   - API calls for styling Native UI with CSS:
-    - API methods setStyle and setClass for Tab Bar and Navigation Bar
-    - API method setTheme to apply a set of styles at once
-- steroids.screen.dismissNextAlert mainly for test automation
-- steroids.view.navigationBar.tapButton mainly for test automation
+    - API methods `setStyle` and `setClass` for Tab Bar and Navigation Bar
+    - API method `setTheme` to apply a set of styles at once
+- `steroids.screen.dismissNextAlert` to dismiss the next appearing alert (intended for test automation)
+- `steroids.view.navigationBar.tapButton` to tap a specified navigation bar button (intended for test automation)
 
 Bugfixes:
 - iOS8 + Cordova compatibility fixes that close [#534](https://github.com/AppGyver/steroids/issues/534):
