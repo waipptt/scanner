@@ -6,9 +6,42 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
+## 4.0.0 (TODO)
+
+Native UI styling with CSS syntax (Pixate). Replaced the default Cordova keyboard plugin with Ionic's keyboard plugin. A lot of iOS8 + Cordova compatibility fixes.
+
+**Breaking Changes:**
+- Switched included Cordova Keyboard plugin to the
+  [Ionic Keyboard plugin](https://github.com/driftyco/ionic-plugins-keyboard/)
+  (fixes [#550](https://github.com/AppGyver/steroids/issues/550))
+- Keyboard settings can no longer be configured app-wide in `config.ios.xml`.
+
+Features:
+- Native UI can be styled with CSS syntax (Pixate).
+  - Styles can be provided from `dist/native-styles/default.css`
+  - API calls for styling Native UI with CSS:
+    - API methods setStyle and setClass for Tab Bar and Navigation Bar
+    - API method setTheme to apply a set of styles at once
+- steroids.screen.dismissNextAlert mainly for test automation
+- steroids.view.navigationBar.tapButton mainly for test automation
+
+Bugfixes:
+- iOS8 + Cordova compatibility fixes that close [#534](https://github.com/AppGyver/steroids/issues/534):
+  - Updated Cordova submodule to iOS8 compatibility commit
+  - Updated hardcoded Cordova plugins for iOS 8 compatibility. See versions [here](https://academy.appgyver.com/categories/7-extending-with-plugins/contents/146-default-plugins).
+- PreviewFileView didn't display pdf on iOS8 (fixes [#528](https://github.com/AppGyver/steroids/issues/528))
+- If called from modal, navigator.camera.getPicture closed the modal after it's callbacks (fixes [#465](https://github.com/AppGyver/steroids/issues/465))
+- Allow `steroids.layers.replace` to be used even when the target view is in the layer stack (fixes [#411](https://github.com/AppGyver/steroids/issues/411))
+- iOS 8 location services caused a "legacy on-demand authorization" error
+  (fixes [#544](https://github.com/AppGyver/steroids/issues/544))
+- Opening the Photo Library caused a crash on iOS 8.
+- Text area lost focus and had other erratic behaviour when orientation was changed
+  while having the keyboard open. (fixes [#467](https://github.com/AppGyver/steroids/issues/467))
+- Fixed typo in Drawer options (strechDrawer -> stretchDrawer)
+
 ## 3.5.2 (2014-09-22)
 
-Minor bugfixes and ensuring iOS8 compatibility.
+Minor bugfixes and fixes to iOS8 compatibility.
 
 Bugfixes:
 - Tab alignment which was broken in iOS 7.0 has now been confirmed to be fixed. Closes [#84](https://github.com/AppGyver/steroids/issues/84).
