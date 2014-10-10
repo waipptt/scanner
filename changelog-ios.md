@@ -39,6 +39,11 @@ Bugfixes:
   while having the keyboard open. (fixes [#467](https://github.com/AppGyver/steroids/issues/467))
 - Fixed typo in Drawer options (strechDrawer -> stretchDrawer)
 
+Known issues:
+- In a landscape-only build on iPhone 6+, adding a style class to the navigation bar makes it invisible [#559](https://github.com/AppGyver/steroids/issues/559)
+- In a landscape-only build in iOS8 opening the BarCode Scanner renders the screen half gray [#560](https://github.com/AppGyver/steroids/issues/560)
+- Landscape-only builds crash when Cordova Camera is used [#455](https://github.com/AppGyver/steroids/issues/455)
+
 ## 3.5.2 (2014-09-22)
 
 Minor bugfixes and fixes to iOS8 compatibility.
