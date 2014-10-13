@@ -1,3 +1,27 @@
+## 3.5.4-edge4 (2014-10-13): Reaching Stable Soon
+
+Features:
+- Change the whole Native UI styling at once with `steroids.app.loadTheme()`.
+- Return a list of all currently preloaded WebViews with `steroids.app.getApplicationState()`.
+- Define a Native CSS `id` in application.coffee for Tabs, to allow convenient
+  styling of individual Tab Items (eg. setting the icon individually for each Tab).
+
+Bug fixes:
+- Showing the soft keyboard on top layer caused flickering.
+- Drawer settings in application.coffee caused a crash.
+- Status Bar hide/show and rotation from landscape->portrait caused flickering.
+- Sending a Post Message caused the recipient view to flicker over the sender
+  view (affected only Chromium runtimes).
+- Tab Bar sometimes appeared as empty right after application start.
+- API `navigation.bar.show()` is now consistent with iOS:
+  - Success callback is invoked.
+  - Change default to show navigation bar without animation.
+- Navigation Bar title no longer disappears if other buttons are set.
+
+Internal:
+- Implementation for Composer required GetNSUserDefaults API
+
+
 ## 3.5.4-edge3 (2014-10-08): Native Styling with CSS
 
 Features:
