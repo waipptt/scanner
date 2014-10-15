@@ -1,5 +1,13 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 3.5.3-p1 (2014-10-03): Cordova Security Update
+
+Bug fixes:
+- Apply security fix for Cordova issue
+[CVE-2014-3502](http://cordova.apache.org/announcements/2014/08/04/android-351.html).
+  Updates Cordova version to 3.5.1.
+
+
 ## 3.5.3 (2014-09-18): Fresh Android replaces Legacy Android
 
 ### Features:
