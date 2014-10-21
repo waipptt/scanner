@@ -1,3 +1,26 @@
+## 3.5.4-rc1 (2014-10-21): Splash Screen
+
+Breaking change:
+- Native CSS is read from `native-styles/android.css` instead of `native-styles/default.css`.
+
+Features:
+- Display Splashscreen on application start.
+  - Splashscreen is displayed for three seconds by default and
+    then hid automatically.
+  - To gain control over when to hide splashscreen, use `steroids.splashscreen.hide()` and set `AutoHideSplashScreen` to false in `config.android.xml`.
+- Cordova assets are no longer copied to internal storage
+  in Scanner to speed up the application start. Cordova can now only be loaded from `http://localhost/cordova.js`.
+- When application is started with a custom schema,
+  the value can be read from `window.AG_APP_STARTUP_URL` ([#141](https://github.com/AppGyver/steroids/issues/141)).
+
+Bugfixes:
+- Not defining `title` or `id` in for Tab Item in application.coffee caused a crash.
+- Cordova's `config.(android.).xml` was not properly applied. This caused problems with plugins depending on it (eg. FileTransfer, Urban Airship).
+- Drawer in application.coffee caused a crash.
+- Certain null attribute values in application.coffee caused a crash.
+- WebView touch events are now disabled when opening a new WebView. This previously allowed to eg. invoke several subsequent layers.push() method calls by repeatedly tapping a button.
+
+
 ## 3.5.4-edge4 (2014-10-13): Reaching Stable Soon
 
 Features:
