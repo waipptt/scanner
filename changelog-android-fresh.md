@@ -1,5 +1,59 @@
 # Changelog for AppGyver Scanner (Fresh Android)
 
+## 3.5.4 (TODO): Splash Screen, Initial View and Native CSS styling
+
+### Features:
+- Display Splashscreen on application start.
+  - Splashscreen is displayed for three seconds by default and
+    then hid automatically.
+  - To gain control over when to hide splashscreen, use `steroids.splashscreen.hide()` and set `AutoHideSplashScreen` to false in `config.android.xml`.
+- InitialView can be shown, dismissed and app can be resetted to it
+- Drawer can be initialized from application.coffee.
+- Implement API for `steroids.tabBar.update`.
+- Navigation Bar modification methods available:
+  - Back button text can be modified and replaced with an image
+  - Back button can be overridden
+  - Navigation Bar can have an image as the title
+  - Navigation Bar can have multiple custom buttons
+    - both image and text are supported
+- Style Native UI elements with CSS (Pixate).
+  - Define styles in `dist/native-styles/android.css`.
+  - API for `setStyle`, `setClass` and `setId`.
+  - Change the whole Native UI styling at once with `steroids.app.loadTheme()`.
+  - Supported elements: Navigation Bar, Buttons, Tab Bar.
+- Define a Native CSS `id` in application.coffee for Tabs, to allow convenient styling of individual Tab Items (eg. setting the icon individually for each Tab).
+- Status bar onSuccess and onFailure callbacks on show and hide
+- Loading.html is shown when WebView is pushing, tabs are loading or a modal is shown.
+- Set WebView default background color to white.
+- Return a list of all currently preloaded WebViews with `steroids.app.getApplicationState()`.
+- Cordova assets are no longer copied to internal storage in Scanner to speed up the application start. Cordova can now only be loaded from `http://localhost/cordova.js`.
+- Make Cordova's ScrollEvent class available to Cordova plugins.
+- Output WebView console.log messages using INFO log level (ie. visible on production builds).
+- When application is started with a custom schema, the value can be read from `window.AG_APP_STARTUP_URL` ([#141](https://github.com/AppGyver/steroids/issues/141)).
+- Scanner version is the code defined in the Build Service.
+- Include hardcoded Open GL 2 version in default Android Manifest for Google Maps plugin support. This will be fixed properly by providing this is as a user configurable option.
+- Remove permission `DOWNLOAD_WITHOUT_NOTIFICATION` which is no longer needed.
+- Load Scanned Application in an emulator without requiring to scan the QR code.
+
+### Bugfixes:
+- Opening two Steroids layers no longer result in two WebViews being created.
+- Sending a post message caused a NPE when application was shutting down.
+- Displaying a WebView no longer causes a nasty blink.
+- CordovaWebView#reload() expected by plugins is now implemented.
+- When using Tab Bar, sometimes a wrong WebView is visible with Chromium
+  (fixes [#526](https://github.com/AppGyver/steroids/issues/526)).
+- Showing the soft keyboard on top layer caused flickering.
+- Status Bar hide/show and rotation from landscape->portrait caused flickering.
+- Sending a Post Message caused the recipient view to flicker over the sender
+  view (affected only Chromium runtimes).
+- Tab Bar sometimes appeared as empty right after application start.
+- API `navigation.bar.show()` is now consistent with iOS:
+  - Success callback is invoked.
+  - Change default to show navigation bar without animation.
+- Cordova's `config.(android.).xml` was not properly applied. This caused problems with plugins depending on it (eg. FileTransfer, Urban Airship) (fixes [#564](https://github.com/AppGyver/steroids/issues/564), [#533](https://github.com/AppGyver/steroids/issues/533)).
+- Certain null attribute values in application.coffee caused a crash.
+- WebView touch events are now disabled when opening a new WebView. This previously allowed to eg. invoke several subsequent layers.push() method calls by repeatedly tapping a button (fixes [#539](https://github.com/AppGyver/steroids/issues/539)).
+
 ## 3.5.3-p1 (2014-10-03): Cordova Security Update
 
 Bug fixes:
