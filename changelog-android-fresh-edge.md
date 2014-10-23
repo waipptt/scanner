@@ -2,6 +2,7 @@
 
 Bugfixes:
 - Pushing a preloaded layer displayed a blank view.
+- Destroy splashscreen view after it has been displayed.
 
 
 ## 3.5.4-rc1 (2014-10-21): Splash Screen
