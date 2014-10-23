@@ -1,7 +1,15 @@
+## 3.5.4-rc2 (2014-10-23): Fix pushing a preloaded layer
+
+Bugfixes:
+- Pushing a preloaded layer displayed a blank view.
+
+
 ## 3.5.4-rc1 (2014-10-21): Splash Screen
 
 Breaking change:
-- Native CSS is read from `native-styles/android.css` instead of `native-styles/default.css`.
+- Native CSS is read from `native-styles/android.css` instead of
+  `native-styles/default.css`
+  ([#558](https://github.com/AppGyver/steroids/issues/558)).
 
 Features:
 - Display Splashscreen on application start.
@@ -15,10 +23,15 @@ Features:
 
 Bugfixes:
 - Not defining `title` or `id` in for Tab Item in application.coffee caused a crash.
-- Cordova's `config.(android.).xml` was not properly applied. This caused problems with plugins depending on it (eg. FileTransfer, Urban Airship).
+- Cordova's `config.(android.).xml` was not properly applied. This caused problems with plugins depending on it (eg. FileTransfer, Urban Airship)
+  (fixes [#564](https://github.com/AppGyver/steroids/issues/564),
+   [#533](https://github.com/AppGyver/steroids/issues/533)).
 - Drawer in application.coffee caused a crash.
 - Certain null attribute values in application.coffee caused a crash.
-- WebView touch events are now disabled when opening a new WebView. This previously allowed to eg. invoke several subsequent layers.push() method calls by repeatedly tapping a button.
+- WebView touch events are now disabled when opening a new WebView.
+  This previously allowed to eg. invoke several subsequent layers.push() method
+  calls by repeatedly tapping a button
+  (fixes [#539](https://github.com/AppGyver/steroids/issues/539)).
 
 
 ## 3.5.4-edge4 (2014-10-13): Reaching Stable Soon
