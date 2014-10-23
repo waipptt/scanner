@@ -3,9 +3,8 @@
 ## 3.5.4 (TODO): Splash Screen, Initial View and Native CSS styling
 
 ### Features:
-- Display Splashscreen on application start.
-  - Splashscreen is displayed for three seconds by default and
-    then hid automatically.
+- Display Splashscreen on application start (closes [#159](https://github.com/AppGyver/steroids/issues/159)).
+  - Splashscreen is displayed for three seconds by default and then hid automatically.
   - To gain control over when to hide splashscreen, use `steroids.splashscreen.hide()` and set `AutoHideSplashScreen` to false in `config.android.xml`.
 - InitialView can be shown, dismissed and app can be resetted to it
 - Drawer can be initialized from application.coffee.
@@ -23,7 +22,7 @@
   - Supported elements: Navigation Bar, Buttons, Tab Bar.
 - Define a Native CSS `id` in application.coffee for Tabs, to allow convenient styling of individual Tab Items (eg. setting the icon individually for each Tab).
 - Status bar onSuccess and onFailure callbacks on show and hide
-- Loading.html is shown when WebView is pushing, tabs are loading or a modal is shown.
+- Loading.html is shown when WebView is pushing, tabs are loading or a modal is shown (closes [#483](https://github.com/AppGyver/steroids/issues/483)).
 - Set WebView default background color to white.
 - Return a list of all currently preloaded WebViews with `steroids.app.getApplicationState()`.
 - Cordova assets are no longer copied to internal storage in Scanner to speed up the application start. Cordova can now only be loaded from `http://localhost/cordova.js`.
@@ -36,12 +35,11 @@
 - Load Scanned Application in an emulator without requiring to scan the QR code.
 
 ### Bugfixes:
+- Displaying a WebView no longer causes a nasty blink (fixes [#525](https://github.com/AppGyver/steroids/issues/525)).
+- When using Tab Bar, sometimes a wrong WebView was visible with Chromium (fixes [#526](https://github.com/AppGyver/steroids/issues/526)).
 - Opening two Steroids layers no longer result in two WebViews being created.
 - Sending a post message caused a NPE when application was shutting down.
-- Displaying a WebView no longer causes a nasty blink.
 - CordovaWebView#reload() expected by plugins is now implemented.
-- When using Tab Bar, sometimes a wrong WebView is visible with Chromium
-  (fixes [#526](https://github.com/AppGyver/steroids/issues/526)).
 - Showing the soft keyboard on top layer caused flickering.
 - Status Bar hide/show and rotation from landscape->portrait caused flickering.
 - Sending a Post Message caused the recipient view to flicker over the sender
