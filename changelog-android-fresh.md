@@ -52,6 +52,9 @@
 - Certain null attribute values in application.coffee caused a crash.
 - WebView touch events are now disabled when opening a new WebView. This previously allowed to eg. invoke several subsequent layers.push() method calls by repeatedly tapping a button (fixes [#539](https://github.com/AppGyver/steroids/issues/539)).
 
+### Known issues:
+- Chromium WebViews appear as stretched after focusing out from a Native UI Control [#574](https://github.com/AppGyver/steroids/issues/574).
+
 ## 3.5.3-p1 (2014-10-03): Cordova Security Update
 
 Bug fixes:
