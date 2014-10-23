@@ -1,5 +1,10 @@
 # Changelog for Legacy AppGyver Scanner for Android
 
+
+## This changelog is about the deprecated Android Scanner
+
+Please see [the changelog for the current version](changelog-android-fresh.html).
+
 ##3.1.3 (2014-03-26)
 
 Brought back support for Android 4.4, with several known issues:

@@ -1,6 +1,6 @@
-# Changelog for AppGyver Scanner (Fresh Android)
+# Changelog for AppGyver Scanner (Android)
 
-## 3.5.4 (TODO): Splash Screen, Initial View and Native CSS styling
+## 3.5.4: Splash Screen, Initial View and Native CSS styling
 
 ### Features:
 - Display Splashscreen on application start (closes [#159](https://github.com/AppGyver/steroids/issues/159)).
@@ -29,7 +29,6 @@
 - Make Cordova's ScrollEvent class available to Cordova plugins.
 - Output WebView console.log messages using INFO log level (ie. visible on production builds).
 - When application is started with a custom schema, the value can be read from `window.AG_APP_STARTUP_URL` ([#141](https://github.com/AppGyver/steroids/issues/141)).
-- Scanner version is the code defined in the Build Service.
 - Include hardcoded Open GL 2 version in default Android Manifest for Google Maps plugin support. This will be fixed properly by providing this is as a user configurable option.
 - Remove permission `DOWNLOAD_WITHOUT_NOTIFICATION` which is no longer needed.
 - Load Scanned Application in an emulator without requiring to scan the QR code.
@@ -54,6 +53,13 @@
 
 ### Known issues:
 - Chromium WebViews appear as stretched after focusing out from a Native UI Control [#574](https://github.com/AppGyver/steroids/issues/574).
+- Chromium runtime crashes with out-of-memory error when changing the device
+  orientation too many times in a short period of time ([#575](https://github.com/AppGyver/steroids/issues/575)).
+- On Chromium Viewport size must be defined in the HTML or content will appear as zoomed out
+  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER.
+- Chromium runtime doesn't handle device button events correctly and crashes sometimes on e.g. backbutton event
+  ([#519](https://github.com/AppGyver/steroids/issues/519)).
+
 
 ## 3.5.3-p1 (2014-10-03): Cordova Security Update
 
@@ -115,7 +121,7 @@ Bug fixes:
 - When pushing a layer or opening a modal the WebView blinks as black (white on Chromium) ([#525](https://github.com/AppGyver/steroids/issues/525)).
 - When using Tab Bar, the app sometimes opens with empty tabs or shows the wrong content in the tabs ([#526](https://github.com/AppGyver/steroids/issues/526)). This corrects itself when the tabs are clicked on a few times.
 - On Chromium Viewport size must be defined in the HTML or content will appear as zoomed out
-  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER. 
+  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER.
 - Chromium runtime doesn't handle device button events correctly and crashes sometimes on e.g. backbutton event
   ([#519](https://github.com/AppGyver/steroids/issues/519))
 - Android 4.0 issues:
