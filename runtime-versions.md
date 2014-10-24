@@ -9,7 +9,7 @@ This document holds up-to-date information on the runtime versions used in vario
 * **iOS Simulator (bundled with Steroids CLI):** 4.0.0
 
 ## Android
-* **[Google Play Fresh Scanner](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en):** 3.5.3
+* **[Google Play Fresh Scanner](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en):** 3.5.4
 * **Build Service Stable Builds:** 3.5.4
 * **Build Service Edge Builds:** 3.5.4
 
