@@ -1,4 +1,15 @@
+## 4.0.0-edge1 (2014-10-24): In-place animations
+
+Features:
+- In place animations (flip and slide to four directions).
+- Complete Layers API
+  - `steroids.layers.replace`
+  - `steroids.layers.popAll`
+
+
 ## 3.5.4-rc2 (2014-10-23): Fix pushing a preloaded layer
+
+3.5.4-rc2 was released as 3.5.4 (stable).
 
 Bugfixes:
 - Pushing a preloaded layer displayed a blank view.
