@@ -8,7 +8,36 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+
+### 4.0.0-edge1:
+
+Breaking change:
+- Native CSS is now read from `ios.css` instead of `default.css`.
+
+Features:
+- Tab Items use the `id` defined in `application.coffee` for Native CSS.
+
+Bugfixes:
+- `steroids.screen.dismissAlert` now triggers Cordova success callbacks.
+- Preloaded drawers were broken after dismissing Initial View for the second
+  time (fixes [#536](https://github.com/AppGyver/steroids/issues/536)).
+- External keyboard caused background of software keyboard being displayed
+  (fixes [#447](https://github.com/AppGyver/steroids/issues/447)).
+- Preloaded WebViews are now discarded when displaying the Initial View
+  (fixes [#572](https://github.com/AppGyver/steroids/issues/572)).
+- Focusing on an input caused an input field being scrolled out of the visible
+  view and it did not come back even when started typing.
+- WebView was pushed too far up if an input was at the bottom of the screen
+  and Tab Bar was visible
+  (fixes [#567](https://github.com/AppGyver/steroids/issues/567)).
+- iPad on landscape-only builds displayed a black splashscreen.
+- Updated cordova-plugin-dialogs to 0.2.10.
+
+
+
 ### 3.5.3-rc3:
+
+3.5.3-rc3 was released as 4.0.0 (we decided to bump the major version number after all.)
 
 Bugfixes:
 - Text area lost focus and had other erratic behaviour when orientation was changed
