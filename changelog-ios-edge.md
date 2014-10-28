@@ -9,7 +9,7 @@ The changelog for **stable** releases is available [here](https://github.com/App
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
 
-### 4.0.0-edge1:
+### 4.0.1-edge1:
 
 Breaking change:
 - Native CSS is now read from `ios.css` instead of `default.css`.
@@ -35,7 +35,7 @@ Bugfixes:
 
 
 
-### 3.5.3-rc3:
+### 3.5.3-rc3 (== 4.0.0 stable):
 
 3.5.3-rc3 was released as 4.0.0 (we decided to bump the major version number after all.)
 
