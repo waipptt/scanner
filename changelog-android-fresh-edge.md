@@ -1,3 +1,26 @@
+## 4.0.0-edge2 (2014-11-04): Tab Bar API and View Events
+
+Features:
+- Implement view related events:
+  - `visibilitychange` (requires Steroids.js 3.5.6)
+  - `steroids.layers.on/off`
+  - `steroids.modal.on/off`
+  - `steroids.tabBar.on/off`
+- Implement rest of Tab Bar API
+  - `steroids.tabBar.replace`
+  - `steroids.tabBar.currentTab.update`
+- Support for automated UI test runner.
+
+
+Bugfixes:
+- Replacing layers failed when doing the API call from a WebView which
+  was not visible, ie. not added to any layer.
+  (fixes [#581](https://github.com/AppGyver/steroids/issues/581)).
+- Fixed three WebView related memory leaks, which will help overall stability.
+- Fixed a crash occurring when onPageLoaded callback was invoked for a
+  WebView which had already been killed (affected especially slower devices).
+
+
 ## 4.0.0-edge1 (2014-10-24): In-place animations
 
 Features:
