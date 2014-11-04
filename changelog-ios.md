@@ -27,6 +27,14 @@ Bugfixes:
 - WebView was pushed too far up if an input was at the bottom of the screen and Tab Bar was visible (fixes [#567](https://github.com/AppGyver/steroids/issues/567)).
 - iPad on landscape-only builds displayed a black splashscreen.
 
+Known issues:
+- Portrait splashscreen is rotated to landscape if device orientation changes while showing the splashscreen [#594](https://github.com/AppGyver/steroids/issues/594)
+- `steroids.screen.rotate` fires false success callback after trying to rotate to an unallowed direction [#598](https://github.com/AppGyver/steroids/issues/598)
+- `steroids.screen.dismissAlert` is broken after the update of cordova-plugin-dialogs to 0.2.10.
+- In a landscape-only build on iPhone 6+, adding a style class to the navigation bar makes it invisible [#559](https://github.com/AppGyver/steroids/issues/559)
+- In a landscape-only build in iOS8 opening the BarCode Scanner renders the screen half gray [#560](https://github.com/AppGyver/steroids/issues/560)
+- Landscape-only builds crash when Cordova Camera is used [#455](https://github.com/AppGyver/steroids/issues/455)
+
 ## 4.0.0 (2014-10-10): Native CSS with Pixate
 
 Native UI styling with CSS syntax (Pixate). Replaced the default Cordova keyboard plugin with Ionic's keyboard plugin. A lot of iOS8 + Cordova compatibility fixes.
