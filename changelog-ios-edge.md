@@ -9,6 +9,18 @@ The changelog for **stable** releases is available [here](https://github.com/App
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
 
+### 4.0.1-rc1 (2014-11-04): iPhone6 and iPhone6+
+
+Features:
+- Support for iPhone6 and iPhone 6+
+  - Requires new graphical assets being defined in the Build Service
+- API calls for `setStyle` properly discard inline styles set previously
+  with `setStyle`
+- `steroids.screen.dismissAlert` now triggers Cordova success callbacks.
+- Preloaded drawers were broken after dismissing Initial View for the second
+  time (fixes [#536](https://github.com/AppGyver/steroids/issues/536)).
+
+
 ### 4.0.1-edge1:
 
 Breaking change:
