@@ -29,6 +29,7 @@ Bugfixes:
 - In a landscape-only build on iPhone 6+, adding a style class to the navigation bar makes it invisible [#559](https://github.com/AppGyver/steroids/issues/559)
 
 Known issues:
+- Splashscreen on landscape-only builds is displayed wrong [#599](https://github.com/AppGyver/steroids/issues/599)
 - Portrait splashscreen is rotated to landscape if device orientation changes while showing the splashscreen [#594](https://github.com/AppGyver/steroids/issues/594)
 - `steroids.screen.rotate` fires false success callback after trying to rotate to an unallowed direction [#598](https://github.com/AppGyver/steroids/issues/598)
 - `steroids.screen.dismissAlert` is broken after the update of cordova-plugin-dialogs to 0.2.10.
