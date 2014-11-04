@@ -8,40 +8,24 @@ For early access to new features and more complex bugfixes, **Edge** versions ar
 
 ### 4.0.1 (2014-11-04): Support for iPhone 6 and iPhone 6+
 
-Breaking change:
+**Breaking changes:**
 - Native CSS is now read from `ios.css` instead of `default.css`.
 
 Features:
 - Support for iPhone6 and iPhone 6+
   - Requires new graphical assets being defined in the Build Service
 - Tab Items use the `id` defined in `application.coffee` for Native CSS.
-
-Bugfixes:
-- API calls for `setStyle` properly discard inline styles set previously
-  with `setStyle`
-- `steroids.screen.dismissAlert` now triggers Cordova success callbacks.
-- Preloaded drawers were broken after dismissing Initial View for the second
-  time (fixes [#536](https://github.com/AppGyver/steroids/issues/536)).
-- External keyboard caused background of software keyboard being displayed
-  (fixes [#447](https://github.com/AppGyver/steroids/issues/447)).
-- Preloaded WebViews are now discarded when displaying the Initial View
-  and loaded again when hiding the Initial View
-  (fixes [#572](https://github.com/AppGyver/steroids/issues/572),
-  [#585](https://github.com/AppGyver/steroids/issues/585)).
-- Focusing on an input caused an input field being scrolled out of the visible
-  view and it did not come back even when started typing.
-- WebView was pushed too far up if an input was at the bottom of the screen
-  and Tab Bar was visible
-  (fixes [#567](https://github.com/AppGyver/steroids/issues/567)).
-- iPad on landscape-only builds displayed a black splashscreen.
 - Updated cordova-plugin-dialogs to 0.2.10.
 
-Internal changes:
-- Fixed Livereload issue with new files not being available.
-- Livereload will also refresh native styles.
-- Livereload combined with a full project refresh caused iOS client to
-  disconnect from Steroids CLI.
-
+Bugfixes:
+- API calls for `setStyle` properly discard inline styles set previously with `setStyle`
+- `steroids.screen.dismissAlert` now triggers Cordova success callbacks.
+- Preloaded drawers were broken after dismissing Initial View for the second time (fixes [#536](https://github.com/AppGyver/steroids/issues/536)).
+- External keyboard caused background of software keyboard being displayed (fixes [#447](https://github.com/AppGyver/steroids/issues/447)).
+- Preloaded WebViews are now discarded when displaying the Initial View and loaded again when hiding the Initial View (fixes [#572](https://github.com/AppGyver/steroids/issues/572), [#585](https://github.com/AppGyver/steroids/issues/585)).
+- Focusing on an input caused an input field being scrolled out of the visible view and it did not come back even when started typing.
+- WebView was pushed too far up if an input was at the bottom of the screen and Tab Bar was visible (fixes [#567](https://github.com/AppGyver/steroids/issues/567)).
+- iPad on landscape-only builds displayed a black splashscreen.
 
 ## 4.0.0 (2014-10-10): Native CSS with Pixate
 
