@@ -1,6 +1,10 @@
-## 4.0.0-edge2 (2014-11-04): Tab Bar API and View Events
+## 4.0.0-edge2 (2014-11-05): Tab Bar API and View Events
 
 Features:
+- Update to Crosswalk 9 with Chromium 38.
+- Native Chromium library is temporarily provided for both ARM and Intel x86.
+  - This increases the minimum APK filesize of the Crosswalk builds to 34 MB.
+    We will soon provide an option to build only for ARM or x86 in the Build Service.
 - Implement view related events:
   - `visibilitychange` (requires Steroids.js 3.5.6)
   - `steroids.layers.on/off`
@@ -9,8 +13,16 @@ Features:
 - Implement rest of Tab Bar API
   - `steroids.tabBar.replace`
   - `steroids.tabBar.currentTab.update`
+- Extended drawer support
+  - enable/disable gestures
+  - change the drawer size
+  - display shadow between the center view and drawer
+- Drawer API methods
+  - `steroids.drawers.update`
+  - `steroids.drawers.show`
+  - `steroids.drawers.hide`
+  - `steroids.drawers.on/off`
 - Support for automated UI test runner.
-
 
 Bugfixes:
 - Replacing layers failed when doing the API call from a WebView which
@@ -19,6 +31,8 @@ Bugfixes:
 - Fixed three WebView related memory leaks, which will help overall stability.
 - Fixed a crash occurring when onPageLoaded callback was invoked for a
   WebView which had already been killed (affected especially slower devices).
+- Fixed a crash when changing orientation too rapidly with Crosswalk
+  (fixes [#575](https://github.com/AppGyver/steroids/issues/575))
 
 
 ## 4.0.0-edge1 (2014-10-24): In-place animations
