@@ -9,7 +9,7 @@ For early access to new features and more complex bugfixes, **Edge** versions ar
 ## 4.0.1 (2014-11-04): Support for iPhone 6 and iPhone 6+
 
 **Breaking changes:**
-- Native CSS is now read from `ios.css` instead of `default.css`.
+- Native CSS is now read from `ios.css` instead of `default.css`. Closes [#558](https://github.com/AppGyver/steroids/issues/558)
 
 Features:
 - Support for iPhone6 and iPhone 6+
@@ -25,7 +25,7 @@ Bugfixes:
 - Preloaded WebViews are now discarded when displaying the Initial View and loaded again when hiding the Initial View (fixes [#572](https://github.com/AppGyver/steroids/issues/572), [#585](https://github.com/AppGyver/steroids/issues/585)).
 - Focusing on an input caused an input field being scrolled out of the visible view and it did not come back even when started typing.
 - WebView was pushed too far up if an input was at the bottom of the screen and Tab Bar was visible (fixes [#567](https://github.com/AppGyver/steroids/issues/567)).
-- iPad on landscape-only builds displayed a black splashscreen.
+- iPad on landscape-only builds displayed a black splashscreen. Closes [#158](https://github.com/AppGyver/steroids/issues/158)
 - In a landscape-only build on iPhone 6+, adding a style class to the navigation bar makes it invisible [#559](https://github.com/AppGyver/steroids/issues/559)
 
 Known issues:
