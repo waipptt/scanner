@@ -1,3 +1,8 @@
+## 4.0.0-edge3 (2014-11-05): Fix a Crosswalk crash
+
+Bugfixes:
+- Fix a nasty crash on Crosswalk runtimes.
+
 ## 4.0.0-edge2 (2014-11-05): Tab Bar API and View Events
 
 Features:
