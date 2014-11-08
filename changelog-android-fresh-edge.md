@@ -1,3 +1,24 @@
+## 4.0.0-rc1 (2014-11-08): Massive iOS Feature Parity
+
+Features:
+- Unload a WebView with `view.unload`.
+- Crosswalk x86 builds:
+  - Choose ARM, x86 or ARM+x86 support for Crosswalk builds.
+
+Changes:
+- Speed up layer transitions to be consistent with iOS (0.6s --> 0.3s).
+- Upgrade build-tools to 21.1 and Android SDK to 21 (Android 5.0 Lollipop).
+- Improve Pixate consistency between iOS and Android.
+
+Bugfixes:
+- Lock touch events and API calls during in-place animations
+  (fixes [#539](https://github.com/AppGyver/steroids/issues/539)).
+- Navigation Bar did not show title image.
+- WebView load event caused an exception in Steroids.js.
+- Back button events did not work on Crosswalk
+  (fixes [#519](https://github.com/AppGyver/steroids/issues/519)).
+
+
 ## 4.0.0-edge3 (2014-11-05): Fix a Crosswalk crash
 
 Bugfixes:
