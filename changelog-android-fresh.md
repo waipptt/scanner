@@ -6,7 +6,7 @@ For information about the new Crosswalk x86 and ARM build options, please see ou
 
 ### Features:
 - In place animations (flip and slide to four directions).
-- Complete Layers API
+- Complete Layers API (closes [#553](https://github.com/AppGyver/steroids/issues/553))
   - `steroids.layers.replace`
   - `steroids.layers.popAll`
 - Unload a WebView with `view.unload`.
