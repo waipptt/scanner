@@ -1,6 +1,49 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 3.5.4: Splash Screen, Initial View and Native CSS styling
+## 4.0.0 (TODO): Major Feature Parity with iOS
+
+For information about the new Crosswalk x86 and ARM build options, please see our [Android build types guide](https://academy.appgyver.com/categories/8-distribution/contents/147-android-build-types).
+
+### Features:
+- In place animations (flip and slide to four directions).
+- Complete Layers API
+  - `steroids.layers.replace`
+  - `steroids.layers.popAll`
+- Unload a WebView with `view.unload`.
+- Update to Crosswalk 9 with Chromium 38.
+- Implement view related events:
+  - `visibilitychange` (requires Steroids.js 3.5.6)
+  - `steroids.layers.on/off`
+  - `steroids.modal.on/off`
+  - `steroids.tabBar.on/off`
+- Implement rest of Tab Bar API
+  - `steroids.tabBar.replace`
+  - `steroids.tabBar.currentTab.update`
+- Extended drawer support
+  - enable/disable gestures
+  - change the drawer size
+  - display shadow between the center view and drawer
+- Drawer API methods
+  - `steroids.drawers.update`
+  - `steroids.drawers.show`
+  - `steroids.drawers.hide`
+  - `steroids.drawers.on/off`
+
+### Changes:
+- Sped up layer transitions to be consistent with iOS (0.6s --> 0.3s).
+- Upgrade build-tools to 21.1 and Android SDK to 21 (Android 5.0 Lollipop).
+- Improve Pixate consistency between iOS and Android.
+
+### Bugfixes:
+- Back button events now work on Crosswalk builds too (fixes [#519](https://github.com/AppGyver/steroids/issues/519)).
+- Fixed a crash when changing orientation too many times with Crosswalk (fixes [#575](https://github.com/AppGyver/steroids/issues/575))
+- Fixed three WebView related memory leaks, which will help overall stability.
+- Locked touch events and API calls during in-place animations (fixes [#539](https://github.com/AppGyver/steroids/issues/539)).
+- Navigation Bar did not show title image.
+- Replacing layers failed when doing the API call from a WebView which was not visible, ie. not added to any layer. (fixes [#581](https://github.com/AppGyver/steroids/issues/581)).
+- Fixed a crash occurring when onPageLoaded callback was invoked for a WebView which had already been killed (affected especially slower devices).
+
+## 3.5.4 (2014-10-23): Splash Screen, Initial View and Native CSS styling
 
 ### Features:
 - Display Splashscreen on application start (closes [#159](https://github.com/AppGyver/steroids/issues/159)).
