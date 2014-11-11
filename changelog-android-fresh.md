@@ -42,6 +42,21 @@ For information about the new Crosswalk x86 and ARM build options, please see ou
 - Replacing layers failed when doing the API call from a WebView which was not visible, ie. not added to any layer. (fixes [#581](https://github.com/AppGyver/steroids/issues/581)).
 - Fixed a crash occurring when onPageLoaded callback was invoked for a WebView which had already been killed (affected especially slower devices).
 
+### Known issues:
+- Crosswalk Chromium WebViews appear as stretched for a moment after focusing out from a Native UI Control or after rotation [#574](https://github.com/AppGyver/steroids/issues/574).
+- On Crosswalk Viewport size must be defined in the HTML or content will appear as zoomed out
+  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER.
+- App crashes if only one drawer is defined [#606](https://github.com/AppGyver/steroids/issues/606).
+- Replacing the center layer while hiding the drawer causes loss of the nav bar and tab bar of the WebView [#608](https://github.com/AppGyver/steroids/issues/608).
+- After calling `modal.hide` the native back button won't work in Crosswalk [#610](https://github.com/AppGyver/steroids/issues/610).
+- If a modal is open during rotation, the WebView below it flashes quickly on top [#609](https://github.com/AppGyver/steroids/issues/609).
+- Nexus 5 with Android version 4.4.4 crashes on `layers.push` in Scanner. Standalone builds seem to do better.
+- `visibilitychange` is not fired on document hide [#607](https://github.com/AppGyver/steroids/issues/607).
+- `steroids.app.getMode` returns "scanner" in Standalone builds.
+- `navigationBar.setStyleCSS` does not apply style [#586](https://github.com/AppGyver/steroids/issues/586).
+
+
+
 ## 3.5.4 (2014-10-23): Splash Screen, Initial View and Native CSS styling
 
 ### Features:
