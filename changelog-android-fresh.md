@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 4.0.0 (TODO): Major Feature Parity with iOS
+## 4.0.0: Major Feature Parity with iOS
 
 For information about the new Crosswalk x86 and ARM build options, please see our [Android build types guide](https://academy.appgyver.com/categories/8-distribution/contents/147-android-build-types).
 
