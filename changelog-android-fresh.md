@@ -42,6 +42,11 @@ For information about the new Crosswalk x86 and ARM build options, please see ou
 - Replacing layers failed when doing the API call from a WebView which was not visible, ie. not added to any layer. (fixes [#581](https://github.com/AppGyver/steroids/issues/581)).
 - Fixed a crash occurring when onPageLoaded callback was invoked for a WebView which had already been killed (affected especially slower devices).
 - Fixed a crash occuring when enter was pressed in the Steroids console while `about:inspect` chrome debugging was open.
+- Crosswalk Scanner crashed when Chrome Debugger was open while doing a
+  project refresh.
+- `steroids.getApplicationState()` returned list of preloads as a string
+  instead of a proper JSON array.
+
 
 ### Known issues:
 - Crosswalk Chromium WebViews appear as stretched for a moment after focusing out from a Native UI Control or after rotation [#574](https://github.com/AppGyver/steroids/issues/574).
