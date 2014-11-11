@@ -19,12 +19,11 @@ For information about the new Crosswalk x86 and ARM build options, please see ou
 - Implement rest of Tab Bar API
   - `steroids.tabBar.replace`
   - `steroids.tabBar.currentTab.update`
-- Extended drawer support
-  - enable/disable gestures
-  - change the drawer size
-  - display shadow between the center view and drawer
 - Drawer API methods
   - `steroids.drawers.update`
+    - enable/disable gestures
+    - change the drawer size
+    - display shadow between the center view and drawer
   - `steroids.drawers.show`
   - `steroids.drawers.hide`
   - `steroids.drawers.on/off`
