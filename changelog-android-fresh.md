@@ -1,11 +1,13 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 4.0.1 (TODO): First round of bugfixes to 4.0.0
+## 4.0.1 (2014-11-17): Bugfixes & Stabilization
 
 ## Bugfixes:
-- App crashed if only one drawer was defined [#606](https://github.com/AppGyver/steroids/issues/606).
+- App crashed if only one drawer was defined
+  (fixes [#606](https://github.com/AppGyver/steroids/issues/606)).
 - App does not crash now if one of the currently available drawer `application.coffee` options available for Android are not defined.
 - Pixate `navigation-bar button` works now in Android the same way it does in iOS.
+- Nexus 5 with Android version 4.4.4 crashes on `layers.push` in Scanner.
 
 ### Known issues:
 - Crosswalk Chromium WebViews appear as stretched for a moment after focusing out from a Native UI Control or after rotation [#574](https://github.com/AppGyver/steroids/issues/574).
@@ -15,7 +17,6 @@
 - Replacing the center layer while hiding the drawer causes loss of the nav bar and tab bar of the WebView [#608](https://github.com/AppGyver/steroids/issues/608).
 - After calling `modal.hide` the native back button won't work in Crosswalk [#610](https://github.com/AppGyver/steroids/issues/610).
 - If a modal is open during rotation, the WebView below it flashes quickly on top [#609](https://github.com/AppGyver/steroids/issues/609).
-- Nexus 5 with Android version 4.4.4 crashes on `layers.push` in Scanner. Standalone builds seem to do better.
 - `visibilitychange` is not fired on document hide [#607](https://github.com/AppGyver/steroids/issues/607).
 - `steroids.app.getMode` returns "scanner" in Standalone builds.
 - `navigationBar.setStyleCSS` does not apply style [#586](https://github.com/AppGyver/steroids/issues/586).
