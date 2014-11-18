@@ -1,3 +1,22 @@
+## 4.0.2-edge1 (2014-11-18):
+
+Bugfixes:
+- Eventlistener on a preloaded webview die after the preloaded view is popped
+  (fixes [#619](https://github.com/AppGyver/steroids/issues/619))
+- Device back button didn't work after `modal.hide()`
+  (fixes [#610](https://github.com/AppGyver/steroids/issues/610))
+- Tab Bar icons appeared as stretched on landscape or big screen devices
+  (icon size must still be defined in `android.css`)
+
+Changes:
+- Compile with Android SDK 21
+
+
+## 4.0.0 - 4.0.1
+
+See changelog for stable releases.
+
+
 ## 4.0.0-rc1 (2014-11-08): Massive iOS Feature Parity
 
 Features:
