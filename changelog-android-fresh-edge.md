@@ -1,7 +1,7 @@
 ## 4.0.2-edge2 (2014-11-19):
 
 Bugfixes:
-- `visibilitychange` event was not fired on `hidden` event correctly. Fixes [#607](https://github.com/AppGyver/steroids/issues/607).
+- `visibilitychange` event was not fired on `hidden` event correctly. Fixes [#607](https://github.com/AppGyver/steroids/issues/607). Needs Steroids.js 3.5.8 or newer.
 
 ## 4.0.2-edge1 (2014-11-18):
 
