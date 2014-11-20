@@ -1,3 +1,20 @@
+## 4.0.2-edge3 (2014-11-20):
+
+Bugfixes:
+- `visibilitychange` was fired twice when modal is opened.
+- App with tabs or drawer calling `broadcastJavascript`
+  while having focus on input field caused unfocus, ie. keyboard disappeared
+  (fixes [#626](https://github.com/AppGyver/steroids/issues/626))
+- User Files take precedence over Steroids and Cordova assets when
+  retrieving from http://localhost
+  (fixes [#597](https://github.com/AppGyver/steroids/issues/597))
+- Requesting an inexistent file gave an empty Javascript alert dialog
+  on Crosswalk
+  (fixes [#524](https://github.com/AppGyver/steroids/issues/524))
+- Cordova FileTransfer plugin crashed with Cookies when using Crosswalk
+  (fixes [#627](https://github.com/AppGyver/steroids/issues/627))
+
+
 ## 4.0.2-edge2 (2014-11-19):
 
 Bugfixes:
