@@ -1,4 +1,13 @@
+## 4.0.2-edge4 (2014-11-20):
+
+Bugfixes:
+- Fix crash which occurred when trying to evaluate Javascript on a killed WebView.
+
+
 ## 4.0.2-edge3 (2014-11-20):
+
+(This edge was pulled back from the Build Service due to a severe regression in
+one of these bugfixes.)
 
 Bugfixes:
 - `visibilitychange` was fired twice when modal is opened.
