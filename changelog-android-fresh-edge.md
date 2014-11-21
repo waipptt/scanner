@@ -1,3 +1,15 @@
+## 4.0.2-edge5 (2014-11-21):
+
+Changes:
+- `getApplicationState()` now also returns `startURL` property,
+ie. the first url used in the WebView.
+
+Bugfixes:
+- Replacing layers from drawer made the center WebView forget Tab Bar
+and Navigation Bar
+(fixes [#608](https://github.com/AppGyver/steroids/issues/608)).
+
+
 ## 4.0.2-edge4 (2014-11-20):
 
 Bugfixes:
