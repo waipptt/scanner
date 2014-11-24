@@ -1,3 +1,13 @@
+## 4.0.2-edge6 (2014-11-24):
+
+Changes:
+- InitialView and Loading.html fade-in and fade-out transitions have been improved.
+
+Bugfixes:
+- Pause event would not fire when application goes to background, instead it fired when app resumed. Fixes [#634](https://github.com/AppGyver/steroids/issues/634)
+- `steroids.navigationBar.update` used to erase buttons if they were not defined in the API call
+- Fixed a rare crash that sometimes happened on app startup
+
 ## 4.0.2-edge5 (2014-11-21):
 
 Changes:
