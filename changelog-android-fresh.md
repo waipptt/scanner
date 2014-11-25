@@ -1,11 +1,12 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 4.0.2 (TODO): Fixed events
+## 4.0.2 (2014-11-25): Fixed events
 
 ### Changes:
 - All builds are compiled with Android SDK 21
 
 ### Features:
+- `steroids.navigationBar` back button can now be styled with Pixate with `navigation-bar back-button { color: red; }`
 - InitialView and Loading.html fade-in and fade-out transitions have been improved.
 - `getApplicationState()` now also returns `startURL` property, ie. the first url used in the WebView.
 
