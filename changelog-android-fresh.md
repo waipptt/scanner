@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 4.0.2 (2014-11-25): Styling for Back Button and Bugfixes to Events
+## 4.0.2 (2014-11-25): Styling for Back Button and Tons of Bugfixes
 
 ### Changes:
 - All builds are compiled with Android SDK 21
@@ -33,6 +33,7 @@
   ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER.
 - `steroids.app.getMode` returns "scanner" in Standalone builds.
 - `navigationBar.setStyleCSS` does not apply style [#586](https://github.com/AppGyver/steroids/issues/586).
+- `steroids.navigationBar` behaviour is inconsistent in preloaded views between Android and iOS [#646](https://github.com/AppGyver/steroids/issues/646).
 
 ## 4.0.1 (2014-11-17): Bugfixes & Stabilization
 
