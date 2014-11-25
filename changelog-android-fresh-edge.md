@@ -1,7 +1,9 @@
 ## 4.0.2-edge7 (2014-11-25):
 
+Features:
+- Native style `navigation-bar back-button` can now be used in Android to style the nav bar back button
+
 Bugfixes:
-- Native style `navigation-bar back-button` had no effect on the native back button (this same problem is still on iOS)
 - If modal was open during rotation, it flashed the WebView below it quickly. Fixes [#609](https://github.com/AppGyver/steroids/issues/609).
 - On Platform WebView contents of other tabs would sometimes flicker on screen.
 
@@ -18,13 +20,10 @@ Bugfixes:
 ## 4.0.2-edge5 (2014-11-21):
 
 Changes:
-- `getApplicationState()` now also returns `startURL` property,
-ie. the first url used in the WebView.
+- `getApplicationState()` now also returns `startURL` property, ie. the first url used in the WebView.
 
 Bugfixes:
-- Replacing layers from drawer made the center WebView forget Tab Bar
-and Navigation Bar
-(fixes [#608](https://github.com/AppGyver/steroids/issues/608)).
+- Replacing layers from drawer made the center WebView forget Tab Bar (fixes [#608](https://github.com/AppGyver/steroids/issues/608)).
 
 
 ## 4.0.2-edge4 (2014-11-20):
