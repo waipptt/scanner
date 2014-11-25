@@ -1,6 +1,6 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 4.0.2 (2014-11-25): Styling for Back Button and Tons of Bugfixes
+## 4.0.2 (TODO): Styling for Back Button and Tons of Bugfixes
 
 ### Changes:
 - All builds are compiled with Android SDK 21
