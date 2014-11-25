@@ -1,8 +1,42 @@
 # Changelog for AppGyver Scanner (Android)
 
+## 4.0.2 (2014-11-25): Styling for Back Button and Bugfixes to Events
+
+### Changes:
+- All builds are compiled with Android SDK 21
+
+### Features:
+- Native style `navigation-bar back-button` can now be used in Android to style the nav bar back button
+- InitialView and Loading.html fade-in and fade-out transitions have been improved.
+- `getApplicationState()` now also returns `startURL` property, ie. the first url used in the WebView.
+
+### Bugfixes:
+- `visibilitychange` event was not fired on `hidden` event correctly. Closes [#607](https://github.com/AppGyver/steroids/issues/607). **Requires Steroids.js 3.5.8 or newer.**
+- Eventlistener on a preloaded webview died after the preloaded view was popped. Closes [#619](https://github.com/AppGyver/steroids/issues/619).
+- Pause event would not fire when application went to background, and instead fired when app resumed. Closes [#634](https://github.com/AppGyver/steroids/issues/634).
+- Device back button didn't work after `modal.hide()`. Closes [#610](https://github.com/AppGyver/steroids/issues/610).
+- `steroids.navigationBar.update` used to erase buttons if they were not defined in the API call
+- If modal was open during rotation, it flashed the WebView below it quickly. Closes [#609](https://github.com/AppGyver/steroids/issues/609).
+- Fixed a rare crash that sometimes happened on app startup
+- On Platform WebView contents of other tabs would sometimes flicker on screen.
+- Replacing layers from drawer made the center WebView forget Tab Bar. Closes [#608](https://github.com/AppGyver/steroids/issues/608).
+- `visibilitychange` was fired twice when modal is opened.
+- App with tabs or drawer calling `broadcastJavascript` while having focus on input field caused unfocus, ie. keyboard disappeared. Closes [#626](https://github.com/AppGyver/steroids/issues/626).
+- Requesting an inexistent file gave an empty Javascript alert dialog on Crosswalk. Closes [#524](https://github.com/AppGyver/steroids/issues/524).
+- Cordova FileTransfer plugin crashed with Cookies when using Crosswalk. Closes [#627](https://github.com/AppGyver/steroids/issues/627).
+- User Files takes now precedence over Steroids and Cordova assets when retrieving from `http://localhost`. Closes [#597](https://github.com/AppGyver/steroids/issues/597).
+- Tab Bar icons appeared as stretched on landscape or big screen devices (icon size must still be defined in `android.css`)
+
+### Known issues:
+- Crosswalk Chromium WebViews appear as stretched for a moment after focusing out from a Native UI Control or after rotation [#574](https://github.com/AppGyver/steroids/issues/574).
+- On Crosswalk Viewport size must be defined in the HTML or content will appear as zoomed out
+  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER.
+- `steroids.app.getMode` returns "scanner" in Standalone builds.
+- `navigationBar.setStyleCSS` does not apply style [#586](https://github.com/AppGyver/steroids/issues/586).
+
 ## 4.0.1 (2014-11-17): Bugfixes & Stabilization
 
-## Bugfixes:
+### Bugfixes:
 - App crashed if only one drawer was defined
   (fixes [#606](https://github.com/AppGyver/steroids/issues/606)).
 - App does not crash now if one of the currently available drawer `application.coffee` options available for Android are not defined.
