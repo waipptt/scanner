@@ -1,12 +1,11 @@
 # Changelog for AppGyver Scanner (Android)
 
-## 4.0.2 (TODO): Styling for Back Button and Tons of Bugfixes
+## 4.0.2 (TODO): Fixed events
 
 ### Changes:
 - All builds are compiled with Android SDK 21
 
 ### Features:
-- Native style `navigation-bar back-button` can now be used in Android to style the nav bar back button
 - InitialView and Loading.html fade-in and fade-out transitions have been improved.
 - `getApplicationState()` now also returns `startURL` property, ie. the first url used in the WebView.
 
