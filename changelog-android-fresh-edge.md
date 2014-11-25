@@ -1,8 +1,5 @@
 ## 4.0.2-edge7 (2014-11-25):
 
-Features:
-- Native style `navigation-bar back-button` can now be used in Android to style the nav bar back button
-
 Bugfixes:
 - If modal was open during rotation, it flashed the WebView below it quickly. Fixes [#609](https://github.com/AppGyver/steroids/issues/609).
 - On Platform WebView contents of other tabs would sometimes flicker on screen.
