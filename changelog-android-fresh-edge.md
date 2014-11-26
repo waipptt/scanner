@@ -1,3 +1,8 @@
+## 4.0.3-edge1 (2014-11-26):
+
+Bugfixes:
+- Fixed a bug where layer would stay hidden if `layers.pop` was called too soon after `layers.push`
+
 ## 4.0.2-edge7 (2014-11-25):
 
 Bugfixes:
