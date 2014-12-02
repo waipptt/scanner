@@ -1,3 +1,8 @@
+## 4.0.3-edge2 (2014-12-02):
+
+Changes:
+- Speed up Cordova `deviceready` on all Android devices by changing the way Cordova's plugins are loaded. `deviceready` should now be ~1 second faster in 4.0.3-edge2 than in 4.0.2.
+
 ## 4.0.3-edge1 (2014-11-26):
 
 Bugfixes:
