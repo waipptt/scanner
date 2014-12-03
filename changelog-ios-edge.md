@@ -8,6 +8,17 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 4.0.2-edge1 (2014-12-03):
+
+Changes:
+- Speed up Cordova `deviceready` on all iOS devices by changing the way Cordova's plugins are loaded. 
+
+Features:
+- Pixate `navigation-bar back-button` has been implemented
+
+Bugfixes:
+- Livereload did not look for changed files in user files
+- Blank page was sometimes shown after splashscreen on Livereload
 
 ### 4.0.1-rc1 (2014-11-04): iPhone6 and iPhone6+
 
