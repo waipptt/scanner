@@ -9,9 +9,9 @@ This document holds up-to-date information on the runtime versions used in vario
 * **iOS Simulator (bundled with Steroids CLI):** 4.0.1
 
 ## Android
-* **[Google Play Fresh Scanner](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en):** 4.0.3-edge2
-* **Build Service Stable Builds:** 4.0.2
-* **Build Service Edge Builds:** 4.0.3-edge2
+* **[Google Play Fresh Scanner](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en):** 4.0.3
+* **Build Service Stable Builds:** 4.0.3
+* **Build Service Edge Builds:** -
 
 ## (Deprecated) Legacy Android
 * **Build Service Legacy Builds:** 3.1.3
