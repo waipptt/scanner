@@ -1,5 +1,23 @@
 # Changelog for AppGyver Scanner (Android)
 
+## 4.0.3 (2014-12-03): Sped up Cordova deviceready
+
+### Changes:
+- Speed up Cordova `deviceready` on all Android devices by changing the way Cordova's plugins are loaded. `deviceready` should now fire ~1 second faster in 4.0.3 than in 4.0.2.
+
+### Bugfixes:
+- Fixed a bug where layer would stay hidden if `layers.pop` was called too soon after `layers.push`
+
+### Known issues:
+- Crosswalk Chromium WebViews appear as stretched for a moment after focusing out from a Native UI Control or after rotation [#574](https://github.com/AppGyver/steroids/issues/574).
+- On Crosswalk Viewport size must be defined in the HTML or content will appear as zoomed out
+  ([#297](https://github.com/AppGyver/steroids/issues/297)). In hybrid apps this causes in iOS the drawers to scroll. Suggested workaround for this is to create a different layout for the Steroids application's CONTENT and DRAWER.
+- The visibilityState of a preloaded view is incorrect [#655](https://github.com/AppGyver/steroids/issues/655).
+- `steroids.view.unload` gives false success callback and does not unload the view [#656](https://github.com/AppGyver/steroids/issues/656).
+- `steroids.app.getMode` returns "scanner" in Standalone builds.
+- `navigationBar.setStyleCSS` does not apply style [#586](https://github.com/AppGyver/steroids/issues/586).
+- `steroids.navigationBar` behaviour is inconsistent in preloaded views between Android and iOS [#646](https://github.com/AppGyver/steroids/issues/646).
+
 ## 4.0.2 (2014-11-25): Fixed events
 
 ### Changes:
