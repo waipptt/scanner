@@ -8,6 +8,11 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 4.0.2-edge2 (2014-12-05):
+
+Bugfix:
+- MAJOR fix to our JSCore, events are now queued to prevent crashes. Fixes the constant Scanner crashing.
+
 ### 4.0.2-edge1 (2014-12-03):
 
 Changes:
