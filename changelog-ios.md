@@ -6,22 +6,42 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
-## 4.0.2 (TODO)
+## 4.0.3 (TODO): JSCore crashing fixed and other stability improvements
 
-Fixes an issue with noticing changes in filepaths for Steroids 2.
+(Was 4.0.2, bumped for AppStore resubmission)
+
+### Changes
+- Speed up Cordova `deviceready` on all iOS devices by changing the way Cordova's plugins are loaded. 
+
+### Features
+- Pixate `navigation-bar back-button` has been implemented
+
+### Bugfixes
+- MAJOR fix to our JSCore, events are now queued to prevent crashes. Fixes the constant Scanner crashing.
+- Livereload did not look for changed files in user files
+- Blank page was sometimes shown after splashscreen on Livereload
+
+### Known issues
+- Splashscreen on landscape-only builds is displayed wrong [#599](https://github.com/AppGyver/steroids/issues/599)
+- Portrait splashscreen is rotated to landscape if device orientation changes while showing the splashscreen [#594](https://github.com/AppGyver/steroids/issues/594)
+- `steroids.screen.rotate` fires false success callback after trying to rotate to an unallowed direction [#598](https://github.com/AppGyver/steroids/issues/598)
+- `steroids.screen.dismissAlert` is broken after the update of cordova-plugin-dialogs to 0.2.10.
+- In a landscape-only build in iOS8 opening the BarCode Scanner renders the screen half gray [#560](https://github.com/AppGyver/steroids/issues/560)
+- Landscape-only builds crash when Cordova Camera is used [#455](https://github.com/AppGyver/steroids/issues/455)
+- When popping layers navigation bar buttons lose the styles defined in `ios.css`. This is a Pixate issue, but adding `font-weight: 300` or any other number to `navigation-bar` in `ios.css` fixes the issue temporarily.
 
 ## 4.0.1 (2014-11-04): Support for iPhone 6 and iPhone 6+
 
 **Breaking changes:**
 - Native CSS is now read from `ios.css` instead of `default.css`. Closes [#558](https://github.com/AppGyver/steroids/issues/558)
 
-Features:
+### Features
 - Support for iPhone6 and iPhone 6+
   - Requires new graphical assets being defined in the Build Service
 - Tab Items use the `id` defined in `application.coffee` for Native CSS.
 - Updated cordova-plugin-dialogs to 0.2.10.
 
-Bugfixes:
+### Bugfixes
 - API calls for `setStyle` properly discard inline styles set previously with `setStyle`
 - `steroids.screen.dismissAlert` now triggers Cordova success callbacks.
 - Preloaded drawers were broken after dismissing Initial View for the second time (fixes [#536](https://github.com/AppGyver/steroids/issues/536)).
@@ -32,7 +52,7 @@ Bugfixes:
 - iPad on landscape-only builds displayed a black splashscreen. Closes [#158](https://github.com/AppGyver/steroids/issues/158)
 - In a landscape-only build on iPhone 6+, adding a style class to the navigation bar makes it invisible [#559](https://github.com/AppGyver/steroids/issues/559)
 
-Known issues:
+### Known issues
 - Splashscreen on landscape-only builds is displayed wrong [#599](https://github.com/AppGyver/steroids/issues/599)
 - Portrait splashscreen is rotated to landscape if device orientation changes while showing the splashscreen [#594](https://github.com/AppGyver/steroids/issues/594)
 - `steroids.screen.rotate` fires false success callback after trying to rotate to an unallowed direction [#598](https://github.com/AppGyver/steroids/issues/598)
