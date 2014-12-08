@@ -1,3 +1,11 @@
+## 4.0.4-edge1 (2014-12-08):
+
+Bugfixes:
+- Images in navigation bar title/buttons did not show up in Ad Hoc builds. Fixes [#651](https://github.com/AppGyver/steroids/issues/651).
+- Unload gave a false success callback and did not unload the view. Fixes [#656](https://github.com/AppGyver/steroids/issues/656).
+- The `visibilityState` for a preloaded view was incorrect. Fixes [#655](https://github.com/AppGyver/steroids/issues/655).
+- Fixed splash screen `autohide: false`.
+
 ## 4.0.3-edge2 (2014-12-02):
 
 Changes:
