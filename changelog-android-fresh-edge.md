@@ -1,4 +1,4 @@
-## 4.0.4-edge1 (TODO):
+## 4.0.4-edge1 (2014-12-09):
 
 Bugfixes:
 - Images in navigation bar title/buttons did not show up in Ad Hoc builds. Fixes [#651](https://github.com/AppGyver/steroids/issues/651).
