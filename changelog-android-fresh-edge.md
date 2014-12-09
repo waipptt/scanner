@@ -5,6 +5,7 @@ Bugfixes:
 - Unload gave a false success callback and did not unload the view. Fixes [#656](https://github.com/AppGyver/steroids/issues/656).
 - The `visibilityState` for a preloaded view was incorrect. Fixes [#655](https://github.com/AppGyver/steroids/issues/655).
 - Fixed splash screen `autohide: false`.
+- Fixed a bug where after hiding a modal on top of a layer with back button in nav bar the back-indicator used to disappear.
 
 ## 4.0.3-edge2 (2014-12-02):
 
