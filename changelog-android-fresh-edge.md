@@ -1,8 +1,5 @@
 ## 4.0.4-edge1 (2014-12-09):
 
-Changes:
-- Fixed the way preloads are handled in Android to make preloaded views act more like they do on iOS.
-
 Bugfixes:
 - Images in navigation bar title/buttons did not show up in Ad Hoc builds. Fixes [#651](https://github.com/AppGyver/steroids/issues/651).
 - Unload gave a false success callback and did not unload the view. Fixes [#656](https://github.com/AppGyver/steroids/issues/656).
