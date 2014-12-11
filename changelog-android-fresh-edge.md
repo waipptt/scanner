@@ -7,6 +7,7 @@ Bugfixes:
 - Cordova plugins could not add native views because `CordovaWebViewInterface#getParent()` returned null. Fixes [#588](https://github.com/AppGyver/steroids/issues/588).
 - `steroids.app.getLaunchURL` returned undefined even after launching from web.
 - Fixed an issue that was causing a NPE when using the localStorage.
+- The Cordova `backbutton` event fired incorrectly on the first page, e.g. not doing anything on the first press of the back button. Fixes [#617](https://github.com/AppGyver/steroids/issues/617).
 
 ## 4.0.4-edge1 (2014-12-09):
 
