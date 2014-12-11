@@ -1,3 +1,13 @@
+## 4.0.4-edge2 (2014-12-11):
+
+Bugfixes:
+- View thought it was hidden (`document.visibilityState && document.hidden`) when it was not if `visibilityChange` had not fired yet.
+- `steroids.navigationBar` behaviour was inconsistent between Android and iOS in preloaded views. Fixes [#646](https://github.com/AppGyver/steroids/issues/646).
+- `steroids.app.getMode` returned "scanner" in Standalone builds.
+- Cordova plugins could not add native views because `CordovaWebViewInterface#getParent()` returned null. Fixes [#588](https://github.com/AppGyver/steroids/issues/588).
+- `steroids.app.getLaunchURL` returned undefined even after launching from web.
+- Fixed an issue that was causing a NPE when using the localStorage.
+
 ## 4.0.4-edge1 (2014-12-09):
 
 Bugfixes:
