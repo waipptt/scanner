@@ -1,3 +1,14 @@
+## 4.0.4-edge3 (TODO):
+
+Features:
+- Options for modal show and hide (animations, navigation bar)
+- `steroids.screen.rotate` now fires callbacks for transition started and ended
+
+Bugfixes:
+- Fixed an issue where e.g. `ng-cordova.js` would be read from `ng-cordova-merged.js`
+- Fixed an issue that emerged in 4.0.4-edge2 which broke `initialView.show`
+- Modals were not discarded after hide or hideAll if they were non-preloaded. Fixes [#686](https://github.com/AppGyver/steroids/issues/686).
+
 ## 4.0.4-edge2 (2014-12-11):
 
 Bugfixes:
