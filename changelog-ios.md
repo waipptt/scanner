@@ -6,7 +6,7 @@ This document contains the release notes for **stable** releases of the iOS Nati
 
 For early access to new features and more complex bugfixes, **Edge** versions are available via the Build Service. Read the [native runtime Edge version guide](https://academy.appgyver.com/categories/2-tooling/contents/86-native-runtime-edge-versions) for more information, and see the [changelog](https://github.com/AppGyver/scanner/blob/master/changelog-ios-edge.md) for release notes.
 
-## 4.0.2 (TODO): JSCore crashing fixed and other stability improvements
+## 4.0.2 (2014-12-18): JSCore crashing fixed and other stability improvements
 
 ### Changes
 - Speed up Cordova `deviceready` on all iOS devices by changing the way Cordova's plugins are loaded. 
@@ -18,6 +18,7 @@ For early access to new features and more complex bugfixes, **Edge** versions ar
 - MAJOR fix to our JSCore, events are now queued to prevent crashes. Fixes the constant Scanner crashing.
 - Livereload did not look for changed files in user files
 - Blank page was sometimes shown after splashscreen on Livereload
+- Fixed issue with appstore builds being rejected from App Store with Invalid Symlink error.
 
 ### Known issues
 - Splashscreen on landscape-only builds is displayed wrong [#599](https://github.com/AppGyver/steroids/issues/599)
