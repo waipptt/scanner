@@ -3,6 +3,8 @@
 Features:
 - Options for modal show and hide (animations, navigation bar)
 - `steroids.screen.rotate` now fires callbacks for transition started and ended
+- Support for [Push Notifications](https://github.com/AppGyver/PushNotifications)
+plugin. Please see the [guide for setup instructions](http://docs.appgyver.com/supersonic/guides/).
 
 Bugfixes:
 - Fixed an issue where e.g. `ng-cordova.js` would be read from `ng-cordova-merged.js`
