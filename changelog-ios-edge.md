@@ -8,6 +8,12 @@ The changelog for **stable** releases is available [here](https://github.com/App
 
 The runtime versions currently in use by each AppGyver component can be found [here](https://github.com/AppGyver/scanner/blob/master/runtime-versions.md)
 
+### 4.0.3-edge2 (2014-12-23):
+
+Features:
+- Support for fade animations when displaying a modal. EXPEDITED.
+- Support for PNG as type of output image from `steroids.screen.capture`. EXPEDITED.
+
 ### 4.0.3-edge1 (2014-12-23):
 
 Bugfix:
