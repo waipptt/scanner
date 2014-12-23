@@ -11,7 +11,7 @@ The runtime versions currently in use by each AppGyver component can be found [h
 ### 4.0.3-edge1 (2014-12-23):
 
 Bugfix:
-- Fixed issue with iOS native popover causing modals to crash on iPad. Fixes [#601]. EXPEDITED.
+- Fixed issue with iOS native popover causing modals to crash on iPad. Fixes [#601](https://github.com/AppGyver/steroids/issues/601). EXPEDITED.
 
 ### 4.0.2-edge3 (2014-12-08):
 
