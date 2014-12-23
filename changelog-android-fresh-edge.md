@@ -1,4 +1,4 @@
-## 4.0.4-edge3 (TODO):
+## 4.0.4-edge3 (2014-12-23):
 
 Features:
 - Options for modal show and hide (animations, navigation bar)
